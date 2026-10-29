@@ -1,0 +1,2214 @@
+{
+  "images": [
+    {
+      "src": "assets/Technical Hub.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/srm-university.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/th_logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/claude.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/th_logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/openai_square.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/th_logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/AI Ready Engineer AI Logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/badge-copilot-CXyQbEb_.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/claude cert.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/GroupPhotos/claude.jpg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/GroupPhotos/github.jpg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/th_logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/servicenow.svg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/servicenow_cert_2.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/servicenow_cert_1.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/GroupPhotos/servicenow.jpg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/GroupPhotos/servicenow%20admin.jpg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/th_logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/pega.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/pega_csa.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/pega_cssa.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/GroupPhotos/pega%20csa.jpg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/GroupPhotos/pega%20cssa.jpg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/GroupPhotos/pega%202.jpeg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/GroupPhotos/pega%203.jpeg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/th_logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/redhat.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/rhcsa.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/GroupPhotos/rehat.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/th_logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/mongodb.svg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/mongodb_associate_developer.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/GroupPhotos/mongodb.jpg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/th_logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/Automation Anywhere.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/GroupPhotos/automation%20anywhere.jpeg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/th_logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/Cisco_Networking_Academy.svg.webp",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/Cisco Certified Network Associate badge.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/CISCO CyberOps Associate badge.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/Cisco Certified Support Technician Networking badge.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/Cisco Certified Support Technician Cybersecurity badge.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/th_logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/oracle_academy.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/02a_Java_Foundations_Associate.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/GroupPhotos/java%20group.jpg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/th_logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/splunk.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/th_logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/mile2_authorized_training_center_8x_enhanced.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/GroupPhotos/cyber.jpg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/th_logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/aws_academy.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/aws_cloud_practitioner.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/aws_solutions_architect.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/aws%20developer%20associate.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/GroupPhotos/aws.jpg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/th_logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/sno_partner-network-logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/snowflake%20associate.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/GroupPhotos/snowflake.jpg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/th_logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/microsoft-logo-png-transparent-background-1.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/azure fundamentals.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/azure associate transparent.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/MTA.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/PL-600.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/powerbi_data_analyst_pl300.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/GroupPhotos/powerplatform.jpg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/GroupPhotos/powerplatform2.jpg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/th_logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/Salesforce.svg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/salesforce-platform-developer-badge.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/salesforce-platform-admin-badge.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/th_logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/Juniper%20Networks.svg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/juniper-jncia-junos-badge.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/th_logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/Google%20Cloud.svg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/google-cloud-associate-cloud-engineer-badge.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/th_logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/AutoCAD.svg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/autocad-certified-user-badge.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/th_logo.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/Cadence%20Design%20Systems.svg",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/Cadence%20Certified%20digital%20badge.png",
+      "complete": true,
+      "ok": true
+    },
+    {
+      "src": "assets/GroupPhotos/vlsi.jpg",
+      "complete": true,
+      "ok": true
+    }
+  ],
+  "pages": [
+    {
+      "number": 1,
+      "heading": "SRM AI & Enterprise Centers of Excellence",
+      "x": 155.65625,
+      "y": 0,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 1122.515625,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 1072,
+        "width": 672.75,
+        "height": 27.84375,
+        "bottom": 1099.84375,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "logo-th",
+          "src": "assets/Technical Hub.png",
+          "x": 208.578125,
+          "y": 215.421875,
+          "width": 309.90625,
+          "height": 173.84375,
+          "bottom": 389.265625,
+          "right": 518.484375
+        },
+        {
+          "tag": "IMG",
+          "class": "logo-srm",
+          "src": "assets/srm-university.png",
+          "x": 586.515625,
+          "y": 209.75,
+          "width": 309.90625,
+          "height": 185.1875,
+          "bottom": 394.9375,
+          "right": 896.421875
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "1. Executive Summary",
+      "x": 155.65625,
+      "y": 1160.296875,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 2282.8125,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 2231.296875,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 2260.140625,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/th_logo.png",
+          "x": 266.125,
+          "y": 1506.421875,
+          "width": 283.453125,
+          "height": 102.046875,
+          "bottom": 1608.46875,
+          "right": 549.578125
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/claude.png",
+          "x": 694.921875,
+          "y": 1485.640625,
+          "width": 143.953125,
+          "height": 143.609375,
+          "bottom": 1629.25,
+          "right": 838.875
+        },
+        {
+          "tag": "DIV",
+          "class": "outcome",
+          "src": null,
+          "x": 216.125,
+          "y": 1782.46875,
+          "width": 672.75,
+          "height": 72.828125,
+          "bottom": 1855.296875,
+          "right": 888.875
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "4. OpenAI Centre of Excellence",
+      "x": 155.65625,
+      "y": 2320.59375,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 3443.109375,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 3391.59375,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 3420.4375,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/th_logo.png",
+          "x": 262.421875,
+          "y": 2451.125,
+          "width": 283.453125,
+          "height": 98.265625,
+          "bottom": 2549.390625,
+          "right": 545.875
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d openai-select-logo",
+          "src": "assets/openai_square.png",
+          "x": 683.828125,
+          "y": 2420.890625,
+          "width": 158.734375,
+          "height": 158.734375,
+          "bottom": 2579.625,
+          "right": 842.5625
+        },
+        {
+          "tag": "DIV",
+          "class": "outcome",
+          "src": null,
+          "x": 216.125,
+          "y": 2713.015625,
+          "width": 672.75,
+          "height": 50.71875,
+          "bottom": 2763.734375,
+          "right": 888.875
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/th_logo.png",
+          "x": 231.25,
+          "y": 2803.5625,
+          "width": 283.453125,
+          "height": 98.265625,
+          "bottom": 2901.828125,
+          "right": 514.703125
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/AI Ready Engineer AI Logo.png",
+          "x": 590.296875,
+          "y": 2803.5625,
+          "width": 283.453125,
+          "height": 98.265625,
+          "bottom": 2901.828125,
+          "right": 873.75
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge",
+          "src": "assets/badge-copilot-CXyQbEb_.png",
+          "x": 353.671875,
+          "y": 3036.71875,
+          "width": 129.34375,
+          "height": 128.5,
+          "bottom": 3165.21875,
+          "right": 483.015625
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge",
+          "src": "assets/claude cert.png",
+          "x": 498.125,
+          "y": 3036.71875,
+          "width": 128.5,
+          "height": 128.5,
+          "bottom": 3165.21875,
+          "right": 626.625
+        },
+        {
+          "tag": "DIV",
+          "class": "outcome",
+          "src": null,
+          "x": 216.125,
+          "y": 3172.765625,
+          "width": 672.75,
+          "height": 66.796875,
+          "bottom": 3239.5625,
+          "right": 888.875
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "x": 155.65625,
+      "y": 3480.890625,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 4603.40625,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 4551.890625,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 4580.734375,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "cohort-photo-full",
+          "src": "assets/GroupPhotos/claude.jpg",
+          "x": 278.484375,
+          "y": 3548.90625,
+          "width": 548.03125,
+          "height": 308.265625,
+          "bottom": 3857.171875,
+          "right": 826.515625
+        },
+        {
+          "tag": "IMG",
+          "class": "cohort-photo-full",
+          "src": "assets/GroupPhotos/github.jpg",
+          "x": 278.484375,
+          "y": 3864.71875,
+          "width": 548.03125,
+          "height": 308.3125,
+          "bottom": 4173.03125,
+          "right": 826.515625
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "6. ServiceNow Training & Placement Support",
+      "x": 155.65625,
+      "y": 4641.1875,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 5763.703125,
+      "right": 949.34375,
+      "scrollHeight": 1160,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 5712.1875,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 5741.03125,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/th_logo.png",
+          "x": 231.25,
+          "y": 4741.484375,
+          "width": 283.453125,
+          "height": 98.265625,
+          "bottom": 4839.75,
+          "right": 514.703125
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/servicenow.svg",
+          "x": 590.296875,
+          "y": 4741.484375,
+          "width": 283.453125,
+          "height": 98.265625,
+          "bottom": 4839.75,
+          "right": 873.75
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge",
+          "src": "assets/servicenow_cert_2.png",
+          "x": 375.8125,
+          "y": 4991.4375,
+          "width": 106.78125,
+          "height": 128.5,
+          "bottom": 5119.9375,
+          "right": 482.59375
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge",
+          "src": "assets/servicenow_cert_1.png",
+          "x": 497.703125,
+          "y": 4991.4375,
+          "width": 106.78125,
+          "height": 128.5,
+          "bottom": 5119.9375,
+          "right": 604.484375
+        },
+        {
+          "tag": "DIV",
+          "class": "outcome",
+          "src": null,
+          "x": 216.125,
+          "y": 5127.484375,
+          "width": 672.75,
+          "height": 66.796875,
+          "bottom": 5194.28125,
+          "right": 888.875
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "src": "assets/GroupPhotos/servicenow.jpg",
+          "x": 324.0625,
+          "y": 5201.8125,
+          "width": 456.875,
+          "height": 257,
+          "bottom": 5458.8125,
+          "right": 780.9375
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "src": "assets/GroupPhotos/servicenow%20admin.jpg",
+          "x": 324.0625,
+          "y": 5476.765625,
+          "width": 456.875,
+          "height": 257,
+          "bottom": 5733.765625,
+          "right": 780.9375
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "7. Pega University Program",
+      "x": 155.65625,
+      "y": 5801.484375,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 6924,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 6872.484375,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 6901.328125,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/th_logo.png",
+          "x": 280.875,
+          "y": 5901.78125,
+          "width": 283.453125,
+          "height": 98.265625,
+          "bottom": 6000.046875,
+          "right": 564.328125
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/pega.png",
+          "x": 739.1875,
+          "y": 5901.78125,
+          "width": 84.921875,
+          "height": 98.265625,
+          "bottom": 6000.046875,
+          "right": 824.109375
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge",
+          "src": "assets/pega_csa.png",
+          "x": 338.03125,
+          "y": 6118.453125,
+          "width": 128.5,
+          "height": 128.5,
+          "bottom": 6246.953125,
+          "right": 466.53125
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge",
+          "src": "assets/pega_cssa.png",
+          "x": 481.640625,
+          "y": 6118.453125,
+          "width": 160.625,
+          "height": 128.5,
+          "bottom": 6246.953125,
+          "right": 642.265625
+        },
+        {
+          "tag": "DIV",
+          "class": "outcome",
+          "src": null,
+          "x": 216.125,
+          "y": 6254.5,
+          "width": 672.75,
+          "height": 66.796875,
+          "bottom": 6321.296875,
+          "right": 888.875
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "src": "assets/GroupPhotos/pega%20csa.jpg",
+          "x": 278.484375,
+          "y": 6328.84375,
+          "width": 548.03125,
+          "height": 308.265625,
+          "bottom": 6637.109375,
+          "right": 826.515625
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "x": 155.65625,
+      "y": 6961.78125,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 8084.296875,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 8032.78125,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 8061.625,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "",
+          "src": "assets/GroupPhotos/pega%20cssa.jpg",
+          "x": 410.765625,
+          "y": 7035.453125,
+          "width": 283.453125,
+          "height": 283.453125,
+          "bottom": 7318.90625,
+          "right": 694.21875
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "src": "assets/GroupPhotos/pega%202.jpeg",
+          "x": 300.546875,
+          "y": 7347.25,
+          "width": 503.90625,
+          "height": 283.453125,
+          "bottom": 7630.703125,
+          "right": 804.453125
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "src": "assets/GroupPhotos/pega%203.jpeg",
+          "x": 223.6875,
+          "y": 7659.046875,
+          "width": 657.625,
+          "height": 236.75,
+          "bottom": 7895.796875,
+          "right": 881.3125
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "heading": "8. Red Hat Academy",
+      "x": 155.65625,
+      "y": 8122.078125,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 9244.59375,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 9193.078125,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 9221.921875,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/th_logo.png",
+          "x": 265.265625,
+          "y": 8222.375,
+          "width": 283.453125,
+          "height": 98.265625,
+          "bottom": 8320.640625,
+          "right": 548.71875
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/redhat.png",
+          "x": 692.34375,
+          "y": 8222.375,
+          "width": 147.390625,
+          "height": 98.265625,
+          "bottom": 8320.640625,
+          "right": 839.734375
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge",
+          "src": "assets/rhcsa.png",
+          "x": 425.890625,
+          "y": 8439.046875,
+          "width": 128.5,
+          "height": 128.5,
+          "bottom": 8567.546875,
+          "right": 554.390625
+        },
+        {
+          "tag": "DIV",
+          "class": "outcome",
+          "src": null,
+          "x": 216.125,
+          "y": 8575.09375,
+          "width": 672.75,
+          "height": 66.796875,
+          "bottom": 8641.890625,
+          "right": 888.875
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "src": "assets/GroupPhotos/rehat.png",
+          "x": 216.140625,
+          "y": 8649.4375,
+          "width": 672.71875,
+          "height": 320.984375,
+          "bottom": 8970.421875,
+          "right": 888.859375
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "heading": "9. MongoDB University",
+      "x": 155.65625,
+      "y": 9282.375,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 10404.890625,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 10353.375,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 10382.21875,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/th_logo.png",
+          "x": 231.25,
+          "y": 9382.671875,
+          "width": 283.453125,
+          "height": 98.265625,
+          "bottom": 9480.9375,
+          "right": 514.703125
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/mongodb.svg",
+          "x": 590.296875,
+          "y": 9382.671875,
+          "width": 283.453125,
+          "height": 98.265625,
+          "bottom": 9480.9375,
+          "right": 873.75
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge",
+          "src": "assets/mongodb_associate_developer.png",
+          "x": 425.890625,
+          "y": 9599.34375,
+          "width": 128.5,
+          "height": 128.5,
+          "bottom": 9727.84375,
+          "right": 554.390625
+        },
+        {
+          "tag": "DIV",
+          "class": "outcome",
+          "src": null,
+          "x": 216.125,
+          "y": 9735.390625,
+          "width": 672.75,
+          "height": 66.796875,
+          "bottom": 9802.1875,
+          "right": 888.875
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "src": "assets/GroupPhotos/mongodb.jpg",
+          "x": 256.859375,
+          "y": 9809.734375,
+          "width": 591.265625,
+          "height": 332.59375,
+          "bottom": 10142.328125,
+          "right": 848.125
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "heading": "10. Automation Anywhere",
+      "x": 155.65625,
+      "y": 10442.671875,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 11565.1875,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 11513.671875,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 11542.515625,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/th_logo.png",
+          "x": 248.03125,
+          "y": 10542.96875,
+          "width": 283.453125,
+          "height": 98.265625,
+          "bottom": 10641.234375,
+          "right": 531.484375
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/Automation Anywhere.png",
+          "x": 640.65625,
+          "y": 10542.96875,
+          "width": 216.296875,
+          "height": 98.265625,
+          "bottom": 10641.234375,
+          "right": 856.953125
+        },
+        {
+          "tag": "DIV",
+          "class": "outcome",
+          "src": null,
+          "x": 216.125,
+          "y": 10774.625,
+          "width": 672.75,
+          "height": 66.796875,
+          "bottom": 10841.421875,
+          "right": 888.875
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "src": "assets/GroupPhotos/automation%20anywhere.jpeg",
+          "x": 278.484375,
+          "y": 10856.53125,
+          "width": 548.03125,
+          "height": 365.34375,
+          "bottom": 11221.875,
+          "right": 826.515625
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "heading": "11. Cisco Networking Academy",
+      "x": 155.65625,
+      "y": 11602.96875,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 12725.484375,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 12673.96875,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 12702.8125,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/th_logo.png",
+          "x": 231.25,
+          "y": 11703.265625,
+          "width": 283.453125,
+          "height": 98.265625,
+          "bottom": 11801.53125,
+          "right": 514.703125
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/Cisco_Networking_Academy.svg.webp",
+          "x": 590.296875,
+          "y": 11703.265625,
+          "width": 283.453125,
+          "height": 98.265625,
+          "bottom": 11801.53125,
+          "right": 873.75
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge",
+          "src": "assets/Cisco Certified Network Associate badge.png",
+          "x": 238.84375,
+          "y": 11951.78125,
+          "width": 117.15625,
+          "height": 117.15625,
+          "bottom": 12068.9375,
+          "right": 356
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge",
+          "src": "assets/CISCO CyberOps Associate badge.png",
+          "x": 367.328125,
+          "y": 11951.78125,
+          "width": 117.15625,
+          "height": 117.15625,
+          "bottom": 12068.9375,
+          "right": 484.484375
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge",
+          "src": "assets/Cisco Certified Support Technician Networking badge.png",
+          "x": 495.8125,
+          "y": 11951.78125,
+          "width": 117.15625,
+          "height": 117.15625,
+          "bottom": 12068.9375,
+          "right": 612.96875
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge",
+          "src": "assets/Cisco Certified Support Technician Cybersecurity badge.png",
+          "x": 624.296875,
+          "y": 11951.78125,
+          "width": 117.15625,
+          "height": 117.15625,
+          "bottom": 12068.9375,
+          "right": 741.453125
+        },
+        {
+          "tag": "DIV",
+          "class": "outcome",
+          "src": null,
+          "x": 216.125,
+          "y": 12076.484375,
+          "width": 672.75,
+          "height": 66.796875,
+          "bottom": 12143.28125,
+          "right": 888.875
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "heading": "12. Oracle Academy",
+      "x": 155.65625,
+      "y": 12763.265625,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 13885.78125,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 13834.265625,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 13863.109375,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/th_logo.png",
+          "x": 231.421875,
+          "y": 12865.109375,
+          "width": 283.453125,
+          "height": 102.046875,
+          "bottom": 12967.15625,
+          "right": 514.875
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/oracle_academy.png",
+          "x": 590.8125,
+          "y": 12868.890625,
+          "width": 282.765625,
+          "height": 94.484375,
+          "bottom": 12963.375,
+          "right": 873.578125
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge",
+          "src": "assets/02a_Java_Foundations_Associate.png",
+          "x": 369.203125,
+          "y": 13116.59375,
+          "width": 241.875,
+          "height": 241.875,
+          "bottom": 13358.46875,
+          "right": 611.078125
+        },
+        {
+          "tag": "DIV",
+          "class": "outcome",
+          "src": null,
+          "x": 216.125,
+          "y": 13369.796875,
+          "width": 672.75,
+          "height": 72.828125,
+          "bottom": 13442.625,
+          "right": 888.875
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "src": "assets/GroupPhotos/java%20group.jpg",
+          "x": 324.0625,
+          "y": 13450.171875,
+          "width": 456.875,
+          "height": 257,
+          "bottom": 13707.171875,
+          "right": 780.9375
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "heading": "13. Splunk Partnership",
+      "x": 155.65625,
+      "y": 13923.5625,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 15046.078125,
+      "right": 949.34375,
+      "scrollHeight": 1186,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 14994.5625,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 15023.40625,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/th_logo.png",
+          "x": 258.4375,
+          "y": 14023.859375,
+          "width": 283.453125,
+          "height": 98.265625,
+          "bottom": 14122.125,
+          "right": 541.890625
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/splunk.png",
+          "x": 671.875,
+          "y": 14023.859375,
+          "width": 174.6875,
+          "height": 98.265625,
+          "bottom": 14122.125,
+          "right": 846.5625
+        },
+        {
+          "tag": "DIV",
+          "class": "outcome",
+          "src": null,
+          "x": 216.125,
+          "y": 14255.515625,
+          "width": 672.75,
+          "height": 66.796875,
+          "bottom": 14322.3125,
+          "right": 888.875
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/th_logo.png",
+          "x": 231.25,
+          "y": 14362.140625,
+          "width": 283.453125,
+          "height": 98.265625,
+          "bottom": 14460.40625,
+          "right": 514.703125
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/mile2_authorized_training_center_8x_enhanced.png",
+          "x": 590.296875,
+          "y": 14362.140625,
+          "width": 283.453125,
+          "height": 98.265625,
+          "bottom": 14460.40625,
+          "right": 873.75
+        },
+        {
+          "tag": "DIV",
+          "class": "outcome",
+          "src": null,
+          "x": 216.125,
+          "y": 14647.453125,
+          "width": 672.75,
+          "height": 66.796875,
+          "bottom": 14714.25,
+          "right": 888.875
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "src": "assets/GroupPhotos/cyber.jpg",
+          "x": 386.203125,
+          "y": 14719.90625,
+          "width": 332.59375,
+          "height": 332.59375,
+          "bottom": 15052.5,
+          "right": 718.796875
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "heading": "15. AWS Academy",
+      "x": 155.65625,
+      "y": 15083.859375,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 16206.375,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 16154.859375,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 16183.703125,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/th_logo.png",
+          "x": 241.78125,
+          "y": 15184.15625,
+          "width": 283.453125,
+          "height": 98.265625,
+          "bottom": 15282.421875,
+          "right": 525.234375
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/aws_academy.png",
+          "x": 621.921875,
+          "y": 15184.15625,
+          "width": 241.28125,
+          "height": 98.265625,
+          "bottom": 15282.421875,
+          "right": 863.203125
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge",
+          "src": "assets/aws_cloud_practitioner.png",
+          "x": 282.28125,
+          "y": 15416.1875,
+          "width": 128.5,
+          "height": 128.5,
+          "bottom": 15544.6875,
+          "right": 410.78125
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge",
+          "src": "assets/aws_solutions_architect.png",
+          "x": 425.890625,
+          "y": 15416.1875,
+          "width": 128.5,
+          "height": 128.5,
+          "bottom": 15544.6875,
+          "right": 554.390625
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge",
+          "src": "assets/aws%20developer%20associate.png",
+          "x": 569.5,
+          "y": 15416.1875,
+          "width": 128.5,
+          "height": 128.5,
+          "bottom": 15544.6875,
+          "right": 698
+        },
+        {
+          "tag": "DIV",
+          "class": "outcome",
+          "src": null,
+          "x": 216.125,
+          "y": 15552.234375,
+          "width": 672.75,
+          "height": 50.71875,
+          "bottom": 15602.953125,
+          "right": 888.875
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "src": "assets/GroupPhotos/aws.jpg",
+          "x": 256.859375,
+          "y": 15610.5,
+          "width": 591.265625,
+          "height": 332.59375,
+          "bottom": 15943.09375,
+          "right": 848.125
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "heading": "16. Snowflake Data Platform",
+      "x": 155.65625,
+      "y": 16244.15625,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 17366.671875,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 17315.15625,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 17344,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/th_logo.png",
+          "x": 231.25,
+          "y": 16344.453125,
+          "width": 283.453125,
+          "height": 98.265625,
+          "bottom": 16442.71875,
+          "right": 514.703125
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/sno_partner-network-logo.png",
+          "x": 590.296875,
+          "y": 16344.453125,
+          "width": 283.453125,
+          "height": 98.265625,
+          "bottom": 16442.71875,
+          "right": 873.75
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge",
+          "src": "assets/snowflake%20associate.png",
+          "x": 425.890625,
+          "y": 16577.609375,
+          "width": 128.5,
+          "height": 128.5,
+          "bottom": 16706.109375,
+          "right": 554.390625
+        },
+        {
+          "tag": "DIV",
+          "class": "outcome",
+          "src": null,
+          "x": 216.125,
+          "y": 16713.65625,
+          "width": 672.75,
+          "height": 66.796875,
+          "bottom": 16780.453125,
+          "right": 888.875
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "src": "assets/GroupPhotos/snowflake.jpg",
+          "x": 256.859375,
+          "y": 16788,
+          "width": 591.265625,
+          "height": 332.59375,
+          "bottom": 17120.59375,
+          "right": 848.125
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "heading": "17. Microsoft Certification Programs",
+      "x": 155.65625,
+      "y": 17404.453125,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 18526.96875,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 18475.453125,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 18504.296875,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/th_logo.png",
+          "x": 217.0625,
+          "y": 17504.75,
+          "width": 283.453125,
+          "height": 98.265625,
+          "bottom": 17603.015625,
+          "right": 500.515625
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/microsoft-logo-png-transparent-background-1.png",
+          "x": 547.765625,
+          "y": 17504.75,
+          "width": 340.15625,
+          "height": 98.265625,
+          "bottom": 17603.015625,
+          "right": 887.921875
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge",
+          "src": "assets/azure fundamentals.png",
+          "x": 225.265625,
+          "y": 17743.5625,
+          "width": 128.5,
+          "height": 128.5,
+          "bottom": 17872.0625,
+          "right": 353.765625
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge azure-developer-badge",
+          "src": "assets/azure associate transparent.png",
+          "x": 327.296875,
+          "y": 17737.90625,
+          "width": 188.203125,
+          "height": 139.828125,
+          "bottom": 17877.734375,
+          "right": 515.5
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge",
+          "src": "assets/MTA.png",
+          "x": 489.03125,
+          "y": 17743.5625,
+          "width": 128.5,
+          "height": 128.5,
+          "bottom": 17872.0625,
+          "right": 617.53125
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge",
+          "src": "assets/PL-600.png",
+          "x": 621.296875,
+          "y": 17743.5625,
+          "width": 126.15625,
+          "height": 128.5,
+          "bottom": 17872.0625,
+          "right": 747.453125
+        },
+        {
+          "tag": "IMG",
+          "class": "cert-badge pl300-badge",
+          "src": "assets/powerbi_data_analyst_pl300.png",
+          "x": 751.21875,
+          "y": 17743.5625,
+          "width": 128.5,
+          "height": 128.5,
+          "bottom": 17872.0625,
+          "right": 879.71875
+        },
+        {
+          "tag": "DIV",
+          "class": "outcome",
+          "src": null,
+          "x": 216.125,
+          "y": 18001.34375,
+          "width": 672.75,
+          "height": 50.71875,
+          "bottom": 18052.0625,
+          "right": 888.875
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "x": 155.65625,
+      "y": 18564.75,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 19687.265625,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 19635.75,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 19664.59375,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "",
+          "src": "assets/GroupPhotos/powerplatform.jpg",
+          "x": 223.6875,
+          "y": 18638.421875,
+          "width": 657.625,
+          "height": 369.921875,
+          "bottom": 19008.34375,
+          "right": 881.3125
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "src": "assets/GroupPhotos/powerplatform2.jpg",
+          "x": 223.6875,
+          "y": 19107.0625,
+          "width": 657.625,
+          "height": 369.921875,
+          "bottom": 19476.984375,
+          "right": 881.3125
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "heading": "18. Salesforce Certification Pathway",
+      "x": 155.65625,
+      "y": 19725.046875,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 20847.5625,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 20796.046875,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 20824.890625,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/th_logo.png",
+          "x": 216.125,
+          "y": 19827.984375,
+          "width": 295.078125,
+          "height": 98.265625,
+          "bottom": 19926.25,
+          "right": 511.203125
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/Salesforce.svg",
+          "x": 748.4375,
+          "y": 19827.984375,
+          "width": 140.4375,
+          "height": 98.265625,
+          "bottom": 19926.25,
+          "right": 888.875
+        },
+        {
+          "tag": "IMG",
+          "class": "vendor-cert-badge",
+          "src": "assets/salesforce-platform-developer-badge.png",
+          "x": 348.421875,
+          "y": 20091.765625,
+          "width": 128.5,
+          "height": 128.5,
+          "bottom": 20220.265625,
+          "right": 476.921875
+        },
+        {
+          "tag": "IMG",
+          "class": "vendor-cert-badge",
+          "src": "assets/salesforce-platform-admin-badge.png",
+          "x": 492.03125,
+          "y": 20091.765625,
+          "width": 128.5,
+          "height": 128.5,
+          "bottom": 20220.265625,
+          "right": 620.53125
+        },
+        {
+          "tag": "DIV",
+          "class": "outcome",
+          "src": null,
+          "x": 216.125,
+          "y": 20229.703125,
+          "width": 672.75,
+          "height": 66.796875,
+          "bottom": 20296.5,
+          "right": 888.875
+        },
+        {
+          "tag": "DIV",
+          "class": "vendor-pathway-strip",
+          "src": null,
+          "x": 216.125,
+          "y": 20307.828125,
+          "width": 672.75,
+          "height": 158.59375,
+          "bottom": 20466.421875,
+          "right": 888.875
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "heading": "19. Juniper Certification Pathway",
+      "x": 155.65625,
+      "y": 20885.34375,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 22007.859375,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 21956.34375,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 21985.1875,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/th_logo.png",
+          "x": 216.125,
+          "y": 20988.28125,
+          "width": 295.078125,
+          "height": 98.265625,
+          "bottom": 21086.546875,
+          "right": 511.203125
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/Juniper%20Networks.svg",
+          "x": 578.96875,
+          "y": 20988.28125,
+          "width": 309.90625,
+          "height": 98.265625,
+          "bottom": 21086.546875,
+          "right": 888.875
+        },
+        {
+          "tag": "IMG",
+          "class": "vendor-cert-badge",
+          "src": "assets/juniper-jncia-junos-badge.png",
+          "x": 420.234375,
+          "y": 21236.703125,
+          "width": 128.5,
+          "height": 128.5,
+          "bottom": 21365.203125,
+          "right": 548.734375
+        },
+        {
+          "tag": "DIV",
+          "class": "outcome",
+          "src": null,
+          "x": 216.125,
+          "y": 21374.640625,
+          "width": 672.75,
+          "height": 66.796875,
+          "bottom": 21441.4375,
+          "right": 888.875
+        },
+        {
+          "tag": "DIV",
+          "class": "vendor-pathway-strip",
+          "src": null,
+          "x": 216.125,
+          "y": 21452.765625,
+          "width": 672.75,
+          "height": 158.59375,
+          "bottom": 21611.359375,
+          "right": 888.875
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "heading": "20. Google Cloud Certification Pathway",
+      "x": 155.65625,
+      "y": 22045.640625,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 23168.15625,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 23116.640625,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 23145.484375,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/th_logo.png",
+          "x": 216.125,
+          "y": 22148.578125,
+          "width": 295.078125,
+          "height": 98.265625,
+          "bottom": 22246.84375,
+          "right": 511.203125
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/Google%20Cloud.svg",
+          "x": 578.96875,
+          "y": 22148.578125,
+          "width": 309.90625,
+          "height": 98.265625,
+          "bottom": 22246.84375,
+          "right": 888.875
+        },
+        {
+          "tag": "IMG",
+          "class": "vendor-cert-badge",
+          "src": "assets/google-cloud-associate-cloud-engineer-badge.png",
+          "x": 420.234375,
+          "y": 22397,
+          "width": 128.5,
+          "height": 128.5,
+          "bottom": 22525.5,
+          "right": 548.734375
+        },
+        {
+          "tag": "DIV",
+          "class": "outcome",
+          "src": null,
+          "x": 216.125,
+          "y": 22534.9375,
+          "width": 672.75,
+          "height": 66.796875,
+          "bottom": 22601.734375,
+          "right": 888.875
+        },
+        {
+          "tag": "DIV",
+          "class": "vendor-pathway-strip",
+          "src": null,
+          "x": 216.125,
+          "y": 22613.0625,
+          "width": 672.75,
+          "height": 158.59375,
+          "bottom": 22771.65625,
+          "right": 888.875
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "heading": "21. AutoCAD Certification Pathway",
+      "x": 155.65625,
+      "y": 23205.9375,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 24328.453125,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 24276.9375,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 24305.78125,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/th_logo.png",
+          "x": 216.125,
+          "y": 23308.875,
+          "width": 295.078125,
+          "height": 98.265625,
+          "bottom": 23407.140625,
+          "right": 511.203125
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/AutoCAD.svg",
+          "x": 578.96875,
+          "y": 23308.875,
+          "width": 309.90625,
+          "height": 98.265625,
+          "bottom": 23407.140625,
+          "right": 888.875
+        },
+        {
+          "tag": "IMG",
+          "class": "vendor-cert-badge",
+          "src": "assets/autocad-certified-user-badge.png",
+          "x": 420.234375,
+          "y": 23557.296875,
+          "width": 128.5,
+          "height": 128.5,
+          "bottom": 23685.796875,
+          "right": 548.734375
+        },
+        {
+          "tag": "DIV",
+          "class": "outcome",
+          "src": null,
+          "x": 216.125,
+          "y": 23695.234375,
+          "width": 672.75,
+          "height": 66.796875,
+          "bottom": 23762.03125,
+          "right": 888.875
+        },
+        {
+          "tag": "DIV",
+          "class": "vendor-pathway-strip",
+          "src": null,
+          "x": 216.125,
+          "y": 23773.359375,
+          "width": 672.75,
+          "height": 158.59375,
+          "bottom": 23931.953125,
+          "right": 888.875
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "heading": "22. Cadence VLSI Design Training",
+      "x": 155.65625,
+      "y": 24366.234375,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 25488.75,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 25437.234375,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 25466.078125,
+        "right": 888.875
+      },
+      "content": null,
+      "items": [
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d",
+          "src": "assets/th_logo.png",
+          "x": 216.125,
+          "y": 24469.171875,
+          "width": 295.078125,
+          "height": 98.265625,
+          "bottom": 24567.4375,
+          "right": 511.203125
+        },
+        {
+          "tag": "IMG",
+          "class": "partner-logo3d cadence-logo",
+          "src": "assets/Cadence%20Design%20Systems.svg",
+          "x": 556.546875,
+          "y": 24480.515625,
+          "width": 396.84375,
+          "height": 75.578125,
+          "bottom": 24556.09375,
+          "right": 953.390625
+        },
+        {
+          "tag": "IMG",
+          "class": "vendor-cert-badge",
+          "src": "assets/Cadence%20Certified%20digital%20badge.png",
+          "x": 488.25,
+          "y": 24734.078125,
+          "width": 128.5,
+          "height": 128.5,
+          "bottom": 24862.578125,
+          "right": 616.75
+        },
+        {
+          "tag": "DIV",
+          "class": "outcome",
+          "src": null,
+          "x": 216.125,
+          "y": 24872.015625,
+          "width": 672.75,
+          "height": 66.796875,
+          "bottom": 24938.8125,
+          "right": 888.875
+        },
+        {
+          "tag": "IMG",
+          "class": "vendor-cadence-photo",
+          "src": "assets/GroupPhotos/vlsi.jpg",
+          "x": 278.484375,
+          "y": 24946.359375,
+          "width": 548.03125,
+          "height": 257,
+          "bottom": 25203.359375,
+          "right": 826.515625
+        },
+        {
+          "tag": "DIV",
+          "class": "vendor-pathway-strip",
+          "src": null,
+          "x": 216.125,
+          "y": 25214.6875,
+          "width": 672.75,
+          "height": 158.59375,
+          "bottom": 25373.28125,
+          "right": 888.875
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "heading": "23. Technical Hub Knowledge Graph",
+      "x": 155.65625,
+      "y": 25526.53125,
+      "width": 793.6875,
+      "height": 1122.515625,
+      "bottom": 26649.046875,
+      "right": 949.34375,
+      "scrollHeight": 1123,
+      "clientHeight": 1123,
+      "footer": {
+        "x": 216.125,
+        "y": 26597.53125,
+        "width": 672.75,
+        "height": 28.84375,
+        "bottom": 26626.375,
+        "right": 888.875
+      },
+      "content": null,
+      "items": []
+    }
+  ]
+}

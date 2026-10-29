@@ -1,0 +1,245 @@
+{
+  "programs": [
+    {
+      "number": 3,
+      "heading": "3. Claude Centre of Excellence",
+      "photos": [],
+      "counts": []
+    },
+    {
+      "number": 4,
+      "heading": "4. OpenAI Centre of Excellence",
+      "photos": [],
+      "counts": []
+    },
+    {
+      "number": 5,
+      "heading": "5. AI Ready Engineer",
+      "photos": [
+        "assets/GroupPhotos/claude.jpg",
+        "assets/GroupPhotos/github.jpg"
+      ],
+      "counts": [
+        [
+          "179",
+          "GitHub certification total"
+        ]
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "6. ServiceNow Training & Placement Support",
+      "photos": [
+        "assets/GroupPhotos/servicenow.jpg",
+        "assets/GroupPhotos/servicenow%20admin.jpg"
+      ],
+      "counts": [
+        [
+          "359",
+          "ServiceNow certification total"
+        ]
+      ]
+    },
+    {
+      "number": 7,
+      "heading": "7. Pega University Program",
+      "photos": [
+        "assets/GroupPhotos/pega%20csa.jpg",
+        "assets/GroupPhotos/pega%20cssa.jpg",
+        "assets/GroupPhotos/pega%202.jpeg",
+        "assets/GroupPhotos/pega%203.jpeg"
+      ],
+      "counts": [
+        [
+          "462",
+          "Pega certification total"
+        ]
+      ]
+    },
+    {
+      "number": 8,
+      "heading": "8. Red Hat Academy",
+      "photos": [
+        "assets/GroupPhotos/rehat.png"
+      ],
+      "counts": [
+        [
+          "544",
+          "Red Hat certification total"
+        ]
+      ]
+    },
+    {
+      "number": 9,
+      "heading": "9. MongoDB University",
+      "photos": [
+        "assets/GroupPhotos/mongodb.jpg"
+      ],
+      "counts": [
+        [
+          "188",
+          "MongoDB certification total"
+        ]
+      ]
+    },
+    {
+      "number": 10,
+      "heading": "10. Automation Anywhere",
+      "photos": [
+        "assets/GroupPhotos/automation%20anywhere.jpeg"
+      ],
+      "counts": [
+        [
+          "247",
+          "Automation Anywhere certifications"
+        ]
+      ]
+    },
+    {
+      "number": 11,
+      "heading": "11. Cisco Networking Academy",
+      "photos": [],
+      "counts": [
+        [
+          "123",
+          "Cisco certification total"
+        ]
+      ]
+    },
+    {
+      "number": 12,
+      "heading": "12. Oracle Academy",
+      "photos": [
+        "assets/GroupPhotos/java%20group.jpg"
+      ],
+      "counts": [
+        [
+          "912",
+          "Oracle certification total"
+        ]
+      ]
+    },
+    {
+      "number": 13,
+      "heading": "13. Splunk Partnership",
+      "photos": [],
+      "counts": []
+    },
+    {
+      "number": 14,
+      "heading": "14. Mile2 Partnership",
+      "photos": [
+        "assets/GroupPhotos/cyber.jpg"
+      ],
+      "counts": [
+        [
+          "22",
+          "CompTIA Security+"
+        ],
+        [
+          "43",
+          "Mile2 certification total"
+        ]
+      ]
+    },
+    {
+      "number": 15,
+      "heading": "15. AWS Academy",
+      "photos": [
+        "assets/GroupPhotos/aws.jpg"
+      ],
+      "counts": [
+        [
+          "1,473",
+          "AWS certification total"
+        ]
+      ]
+    },
+    {
+      "number": 16,
+      "heading": "16. Snowflake Data Platform",
+      "photos": [
+        "assets/GroupPhotos/snowflake.jpg"
+      ],
+      "counts": [
+        [
+          "134",
+          "SnowPro certification total"
+        ]
+      ]
+    },
+    {
+      "number": 17,
+      "heading": "17. Microsoft Certification Programs",
+      "photos": [
+        "assets/GroupPhotos/powerplatform.jpg",
+        "assets/GroupPhotos/powerplatform2.jpg"
+      ],
+      "counts": [
+        [
+          "4,651",
+          "Total Microsoft certificates"
+        ]
+      ]
+    },
+    {
+      "number": 18,
+      "heading": "18. Salesforce Certification Pathway",
+      "photos": [],
+      "counts": [
+        [
+          "136",
+          "Salesforce certification total"
+        ]
+      ]
+    },
+    {
+      "number": 19,
+      "heading": "19. Juniper Certification Pathway",
+      "photos": [],
+      "counts": [
+        [
+          "110",
+          "Juniper certification total"
+        ]
+      ]
+    },
+    {
+      "number": 20,
+      "heading": "20. Google Cloud Certification Pathway",
+      "photos": [],
+      "counts": [
+        [
+          "106",
+          "Google Cloud certification total"
+        ]
+      ]
+    },
+    {
+      "number": 21,
+      "heading": "21. AutoCAD Certification Pathway",
+      "photos": [],
+      "counts": [
+        [
+          "67",
+          "AutoCAD certification total"
+        ]
+      ]
+    },
+    {
+      "number": 22,
+      "heading": "22. Cadence VLSI Design Training",
+      "photos": [
+        "assets/GroupPhotos/vlsi.jpg"
+      ],
+      "counts": [
+        [
+          "57",
+          "Students completed Cadence certifications"
+        ]
+      ]
+    }
+  ],
+  "image_count": 88,
+  "photo_count": 18
+}

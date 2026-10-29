@@ -1,0 +1,2555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SRM AI &amp; Enterprise Centers of Excellence â€” Technical Hub &amp; SRM University</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+  :root {
+    --green: #067a45;
+    --green-dark: #075b37;
+    --lime: #70bf2a;
+    --gold: #f3b316;
+    --ink: #182126;
+    --muted: #5d6870;
+    --line: #d8e0e5;
+    --soft: #f4f7f8;
+    --soft-green: #edf7f1;
+    --accent: #e77d66;
+  }
+  * { box-sizing: border-box; }
+  html, body { 
+    margin: 0; 
+    padding: 0; 
+    background: #e9edf0; 
+    color: var(--ink); 
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif; 
+  }
+  body { 
+    -webkit-print-color-adjust: exact; 
+    print-color-adjust: exact; 
+  }
+  .page {
+    width: 210mm;
+    height: 297mm;
+    min-height: 297mm;
+    max-height: 297mm;
+    margin: 0 auto 10mm;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 7mm 16mm 13mm;
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+  .page:last-child { page-break-after: auto; }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 7mm;
+    border-bottom: 1.2px solid var(--line);
+    padding-bottom: 1.5mm;
+    margin-bottom: 1.5mm;
+  }
+  .header-left {
+    font-weight: 800;
+    color: var(--green);
+    letter-spacing: .04em;
+    font-size: 8.6pt;
+    line-height: 1.25;
+  }
+  .header-right {
+    font-size: 7.8pt;
+    color: var(--muted);
+    text-align: right;
+    line-height: 1.25;
+  }
+  
+  .cover-page { 
+    background: #fff; 
+    padding: 16mm 16mm 15mm;
+  }
+  .cover-decor {
+    position: absolute;
+    width: 116mm; height: 116mm;
+    right: -48mm; top: -58mm;
+    border: 18mm solid #f0f6f2;
+    border-radius: 50%;
+    opacity: .85;
+  }
+  .cover-decor-two {
+    position: absolute;
+    width: 78mm; height: 78mm;
+    left: -50mm; bottom: -44mm;
+    border: 12mm solid #f5faf7;
+    border-radius: 50%;
+  }
+  .cover-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9mm;
+    margin-top: 48mm;
+    position: relative;
+    z-index: 2;
+  }
+  .logo-box {
+    width: 82mm;
+    height: 48mm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo-divider { width: 1.2px; height: 35mm; background: #b9d5c5; }
+  .logo-th { width: 82mm; height: 46mm; object-fit: contain; }
+  .logo-srm { width: 82mm; height: 49mm; object-fit: contain; }
+  
+  .cover-title {
+    text-align: center;
+    margin: 18mm 0 0;
+    position: relative;
+    z-index: 2;
+  }
+  h1 {
+    font-size: 26pt;
+    margin: 4.5mm auto 3.5mm;
+    line-height: 1.15;
+    color: var(--green-dark);
+    max-width: 172mm;
+    letter-spacing: -.02em;
+  }
+  .subtitle {
+    font-size: 10.8pt;
+    font-weight: 700;
+    color: #3d4a50;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 168mm;
+  }
+  .collab {
+    text-align: center;
+    font-size: 10.4pt;
+    color: #56636a;
+    margin-top: 6mm;
+    line-height: 1.55;
+  }
+  .cover-vision {
+    margin: 14mm auto 0;
+    max-width: 174mm;
+    border: 0;
+    border-left: 2mm solid var(--lime);
+    background: var(--green-dark);
+    padding: 6.5mm 10mm;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  .label {
+    font-size: 8.5pt;
+    font-weight: 900;
+    color: var(--green);
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    margin-bottom: 2.5mm;
+  }
+  .vision-text {
+    font-size: 11.5pt;
+    line-height: 1.6;
+    margin: 0;
+  }
+  .date {
+    margin-top: 15mm;
+    text-align: center;
+    font-weight: 800;
+    color: #5d6870;
+    font-size: 9.8pt;
+    letter-spacing: .08em;
+    position: relative;
+    z-index: 2;
+  }
+  
+  h2 {
+    font-size: 13.5pt;
+    color: var(--green-dark);
+    margin: 0 0 1.5mm;
+    line-height: 1.2;
+  }
+  p {
+    font-size: 9.1pt;
+    line-height: 1.42;
+    margin: 0 0 2mm;
+  }
+  .section {
+    margin-bottom: 2mm;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  ul {
+    margin: 0.8mm 0 0 0;
+    padding-left: 5mm;
+  }
+  li {
+    font-size: 8.7pt;
+    line-height: 1.38;
+    margin: 0.3mm 0;
+  }
+  
+  .cert-badge-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14mm;
+    margin: 2mm 0 2.5mm;
+  }
+  .cert-badge {
+    height: 64mm;
+    width: auto;
+    max-width: 100mm;
+    object-fit: contain;
+    filter: drop-shadow(4.5px 4.5px 9px #cdd8de) drop-shadow(-4.5px -4.5px 9px #ffffff); /* taste-skill-ignore: dimensional finish on supplied certification badges. */
+  }
+  /* Compact layout for high-density pages (Page 5 & Page 8) */
+  .page-compact .section {
+    margin-bottom: 2mm;
+  }
+  .page-compact .partner-logos {
+    margin: 1.2mm 0 1.8mm;
+  }
+  .page-compact .partner-logo3d {
+    height: 24mm !important;
+  }
+  .page-compact .partner-logo3d.openai-select-logo {
+    height: 42mm !important;
+  }
+  .page-compact p {
+    margin: 0 0 1.5mm;
+    font-size: 8.8pt;
+    line-height: 1.35;
+  }
+  .page-compact ul {
+    margin: 0.6mm 0 0 0;
+  }
+  .page-compact li {
+    font-size: 8.4pt;
+    line-height: 1.3;
+    margin: 0.3mm 0;
+  }
+  .page-compact .cert-badge-row {
+    margin: 1.5mm 0 1.8mm;
+  }
+  .page-compact .cert-badge {
+    height: 34mm;
+    max-width: 90mm;
+  }
+  .page-compact .outcome {
+    margin-top: 1.6mm;
+    padding: 1.8mm 3.5mm;
+  }
+  .outcome {
+    border: 0;
+    border-left: 1.4mm solid var(--lime);
+    background: #edf5ef;
+    border-radius: 0 2mm 2mm 0;
+    padding: 2.8mm 4mm;
+    margin-top: 3mm;
+  }
+  .outcome-title {
+    color: var(--green-dark);
+    font-weight: 900;
+    font-size: 7.8pt;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: 0.8mm;
+  }
+  .certification-count {
+    display: flex;
+    align-items: stretch;
+    gap: 2.5mm;
+    margin-top: 2.5mm;
+  }
+  .certification-count > span {
+    position: relative;
+    display: flex;
+    flex: 1 1 0;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5mm;
+    min-height: 12mm;
+    padding: 1.6mm 2.6mm;
+    border: 0;
+    border-left: 1.2mm solid var(--lime);
+    border-radius: 0 2mm 2mm 0;
+    background: #edf5ef;
+    color: var(--green-dark);
+    font-size: 6.8pt;
+    font-weight: 800;
+    letter-spacing: .045em;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  .certification-count strong {
+    color: var(--green);
+    font-size: 18pt;
+    font-weight: 900;
+    letter-spacing: -.025em;
+    line-height: .95;
+    white-space: nowrap;
+  }
+  .cert-badge-count-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2mm;
+    margin: 2mm 0;
+  }
+  .cert-badge-count-layout .cert-badge-row {
+    flex: 0 0 auto;
+    justify-content: center;
+    gap: 4mm;
+    margin: 0 !important;
+  }
+  .cert-badge-count-layout .certification-count {
+    flex: 0 0 auto;
+    margin: 0;
+  }
+  .cert-badge-count-layout .certification-count > span {
+    flex: 0 0 31mm;
+    flex-direction: column-reverse;
+    justify-content: center;
+    min-height: 31mm;
+    padding: 2.3mm 1.8mm;
+    border-top: 2px solid var(--lime);
+    border-left: 1.2mm solid var(--lime);
+    font-size: 7pt;
+    text-align: center;
+  }
+  .cert-badge-count-layout .certification-count strong {
+    margin: 0 0 1.4mm;
+    font-size: 22pt;
+  }
+  .cisco-cert-badge-layout .cert-badge-row {
+    gap: 3mm;
+  }
+  .page-compact .cisco-cert-badge-layout .cert-badge {
+    height: 31mm;
+    max-width: 31mm;
+  }
+  .microsoft-certification-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5mm;
+    margin: 2mm 0;
+  }
+  .microsoft-certification-showcase .cert-badge-row {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1mm !important;
+    margin: 0 !important;
+  }
+  .microsoft-certification-showcase .cert-badge-row > img {
+    flex: 0 0 auto;
+  }
+  .page-compact .microsoft-certification-showcase .cert-badge {
+    height: 34mm;
+    max-width: 34mm;
+  }
+  .page-compact .microsoft-certification-showcase .azure-developer-badge {
+    height: 37mm;
+    max-width: 50mm;
+    margin-left: -8mm;
+    margin-right: -8mm;
+  }
+  .page-compact .microsoft-certification-showcase .pl300-badge {
+    display: block;
+    width: 34mm;
+    height: 34mm;
+    max-width: 34mm;
+    flex: 0 0 34mm;
+    object-fit: contain;
+  }
+  .microsoft-certification-showcase .microsoft-total {
+    width: 78mm;
+    margin: 0 auto;
+  }
+  .microsoft-certification-showcase .microsoft-total > span {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 18mm;
+    text-align: center;
+  }
+  .microsoft-certification-showcase .microsoft-total strong {
+    margin: 0 0 0.8mm;
+    font-size: 23pt;
+  }
+  .microsoft-certification-showcase .microsoft-total small {
+    color: var(--green-dark);
+    font-size: 7pt;
+    font-weight: 800;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+  }
+  .microsoft-count-breakdown {
+    margin-top: 0.5mm;
+    color: var(--muted);
+    font-size: 7.2pt;
+    text-align: center;
+  }
+  .vendor-pathway-page .partner-logos {
+    justify-content: space-between;
+    gap: 12mm;
+    margin: 3mm 0 4mm;
+  }
+  .vendor-pathway-page .partner-logo3d {
+    height: 28mm !important;
+    max-width: 82mm;
+  }
+  .vendor-pathway-page .partner-logo3d.cadence-logo {
+    height: 20mm !important;
+    max-width: 105mm;
+  }
+  .vendor-cadence-photo {
+    display: block;
+    width: 145mm;
+    max-width: 100%;
+    max-height: 68mm;
+    height: auto;
+    margin: 2mm auto 0;
+    object-fit: contain;
+    border: 0;
+    border-radius: 14px;
+    box-shadow: 0 5px 10px rgba(17, 35, 29, .16), 0 15px 26px rgba(17, 35, 29, .12); /* taste-skill-ignore: user requested rounded, dimensional cohort photos. */
+  }
+  .vendor-focus-heading {
+    margin: 3mm 0 1.5mm;
+    color: var(--green-dark);
+    font-size: 7.8pt;
+    font-weight: 900;
+    letter-spacing: .1em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .vendor-cert-badge-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4mm;
+    margin: 1mm 0 2.5mm;
+  }
+  .vendor-cert-badge {
+    display: block;
+    flex: 0 0 34mm;
+    width: 34mm;
+    height: 34mm;
+    object-fit: contain;
+    filter: drop-shadow(2px 4px 5px rgba(21, 49, 63, .2)); /* taste-skill-ignore: supplied certification badges need light depth for legibility. */
+  }
+  .vendor-pathway-page .certification-count {
+    flex: 0 0 31mm;
+    margin: 0 0 0 1mm;
+  }
+  .vendor-pathway-page .certification-count > span {
+    flex: 0 0 31mm;
+    flex-direction: column-reverse;
+    justify-content: center;
+    min-height: 31mm;
+    padding: 2mm;
+    border-top: 2px solid var(--vendor-accent);
+    border-left: 1.2mm solid var(--vendor-accent);
+    text-align: center;
+  }
+  .vendor-pathway-page .certification-count strong {
+    margin-bottom: 1.2mm;
+    font-size: 22pt;
+  }
+  .vendor-pathway-strip {
+    margin-top: 4mm;
+    padding-top: 3mm;
+    border-top: 0;
+  }
+  .vendor-pathway-strip-title {
+    margin-bottom: 2mm;
+    color: var(--green-dark);
+    font-size: 8pt;
+    font-weight: 900;
+    letter-spacing: .11em;
+    text-align: center;
+  }
+  .vendor-pathway-steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4mm;
+  }
+  .vendor-pathway-step {
+    min-height: 45mm;
+    padding: 3mm 4mm;
+    border: 0;
+    border-top: 1.5mm solid var(--vendor-accent);
+    border-radius: 0 1.5mm 1.5mm 1.5mm;
+    background: #edf5ef;
+  }
+  .vendor-pathway-step-number {
+    display: inline-flex;
+    width: 8mm;
+    height: 8mm;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2mm;
+    border-radius: 1.2mm;
+    background: var(--vendor-accent);
+    color: #fff;
+    font-size: 8pt;
+    font-weight: 900;
+  }
+  .vendor-pathway-step-title {
+    margin-bottom: 1mm;
+    color: var(--green-dark);
+    font-size: 8.2pt;
+    font-weight: 900;
+  }
+  .vendor-pathway-step-copy {
+    color: var(--muted);
+    font-size: 7.8pt;
+    line-height: 1.35;
+  }
+  .automation-photo-page .automation-cohort-photo {
+    margin: 4mm auto 2mm;
+    text-align: center;
+  }
+  .automation-photo-page .automation-cohort-photo img {
+    display: block;
+    width: 145mm;
+    max-width: 100%;
+    max-height: 105mm;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+  .automation-photo-page .automation-cohort-photo figcaption {
+    margin-top: 2mm;
+    color: var(--green-dark);
+    font-size: 9pt;
+    font-weight: 800;
+    letter-spacing: .05em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .automation-photo-page .certification-count {
+    width: 80mm;
+    margin: 2mm auto 0;
+  }
+  
+  .footer {
+    position: absolute;
+    left: 16mm;
+    right: 16mm;
+    bottom: 6mm;
+    display: flex;
+    justify-content: space-between;
+    font-size: 7.6pt;
+    color: #7a858c;
+    border-left: 1.2mm solid var(--lime);
+    border-radius: 0 1.5mm 1.5mm 0;
+    background: #f0f6f1;
+    padding: 1.7mm 3mm;
+  }
+  .cover-footer {
+    border: 0;
+    justify-content: center;
+    color: #839097;
+  }
+  .small-note { font-size: 8.2pt; color: #69747b; line-height: 1.36; }
+  
+  @media screen {
+    .page { box-shadow: 0 5px 24px rgba(0,0,0,.10); } /* taste-skill-ignore: separates A4 sheets in browser preview; print removes it. */
+  }
+  
+  .partner-logos {
+    display: flex;
+    gap: 12mm;
+    margin: 2mm 0 2.5mm;
+    align-items: center;
+  }
+  .partner-logo3d {
+    height: 32mm;
+    width: auto;
+    max-width: 75mm;
+    object-fit: contain;
+    border-radius: 9px;
+    filter: drop-shadow(3.5px 3.5px 5px #cdd8de) drop-shadow(-3.5px -3.5px 5px #ffffff); /* taste-skill-ignore: subtle lift for partner brand marks. */
+    display: block;
+  }
+  .partner-wordmark {
+    min-width: 60mm;
+    min-height: 24mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #1769aa;
+    font-size: 16pt;
+    font-weight: 700;
+    line-height: 1.05;
+    text-align: center;
+  }
+  .partner-wordmark small {
+    margin-top: 1.5mm;
+    color: var(--text-muted);
+    font-size: 7.5pt;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  
+  .assoc-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  /* ==========================================
+     FULL-WIDTH COHORT PROOF SHOWCASE (UNCONGESTED)
+  =========================================== */
+  .cohort-showcase {
+    margin: 1.8mm 0 2mm;
+    padding: 1.5mm 2.2mm 2mm;
+    background: #f6faf7;
+    border: 0;
+    border-radius: 0;
+  }
+  .cohort-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.4mm;
+    padding: 0 0.8mm;
+  }
+  .cohort-title-tag {
+    display: flex;
+    align-items: center;
+    gap: 1.5mm;
+    font-size: 6.8pt;
+    font-weight: 800;
+    color: var(--green-dark);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+  }
+  .cohort-dot-pulse {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--lime);
+    display: inline-block;
+  }
+  .cohort-badges-inline {
+    display: flex;
+    align-items: center;
+    gap: 2mm;
+  }
+  .cohort-badges-label {
+    font-size: 6.2pt;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+  .cohort-badge-mini {
+    height: 25mm;
+    width: auto;
+    max-width: 30mm;
+    object-fit: contain;
+    filter: drop-shadow(1.5px 1.5px 3px rgba(0,0,0,0.12)); /* taste-skill-ignore: depth preserves the supplied badge artwork. */
+    display: block;
+  }
+  .cohort-frame-full {
+    width: 100%;
+    margin: 2mm 0 0;
+    overflow: visible;
+  }
+  .cohort-photo-full {
+    width: 145mm;
+    max-width: 100%;
+    max-height: 105mm;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+  /* Old styles */
+  .academy-proof-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4.5mm;
+    margin: 2mm 0 2.2mm;
+    padding: 1.8mm 3mm;
+    background: #f6faf7;
+    border: 0;
+    border-radius: 0;
+  }
+  .proof-badges {
+    flex: 0 0 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .proof-label {
+    font-size: 6.8pt;
+    font-weight: 800;
+    color: var(--green-dark);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-bottom: 1.2mm;
+  }
+  .proof-badges-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5mm;
+    width: 100%;
+  }
+  .cert-badge-compact {
+    height: 36mm;
+    width: auto;
+    max-width: 36mm;
+    object-fit: contain;
+    filter: drop-shadow(2.5px 2.5px 5px #cdd8de) drop-shadow(-2.5px -2.5px 5px #ffffff); /* taste-skill-ignore: dimensional treatment for certification badges. */
+  }
+  .proof-cohort {
+    flex: 0 0 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .cohort-frame {
+    width: 100%;
+    overflow: visible;
+  }
+  .proof-photo-img {
+    width: 100%;
+    height: 40mm;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Full-width cohort showcase for Claude (Page 2) */
+  .cohort-showcase-claude {
+    margin: 3mm 0 3mm;
+    padding: 2mm 3.5mm;
+    background: #f6faf7;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+  }
+  .cohort-frame-claude {
+    width: 100%;
+    overflow: visible;
+    margin: 0 auto;
+  }
+  .cohort-photo-claude-img {
+    width: 145mm;
+    max-width: 100%;
+    height: auto;
+    max-height: 105mm;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+  .cohort-caption-claude {
+    font-size: 7.4pt;
+    font-weight: 800;
+    color: var(--green-dark);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-top: 1.5mm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2mm;
+  }
+  .cohort-dot-pulse {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--lime);
+    display: inline-block;
+  }
+
+
+  .compact-cohort-gallery {
+    margin: 1.5mm auto 0;
+    display: grid;
+    align-items: start;
+    gap: 4mm;
+    max-width: 178mm;
+  }
+  .compact-cohort-gallery.paired {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .compact-cohort-gallery.single {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .compact-cohort-gallery.single img {
+    max-height: 88mm;
+  }
+  .compact-cohort-gallery.single img[src*="java%20group.jpg"] {
+    max-height: 68mm;
+  }
+  .compact-cohort-gallery.paired.stacked {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.2mm;
+    margin-top: 1.5mm;
+  }
+  .compact-cohort-gallery.paired.stacked .compact-cohort-item img {
+    max-width: 150mm;
+    max-height: 62mm;
+  }
+  .compact-cohort-gallery.paired.stacked .compact-cohort-item figcaption {
+    margin-top: .5mm;
+  }
+  .compact-cohort-gallery.paired.stacked.powerplatform .compact-cohort-item img {
+    max-width: 130mm;
+    max-height: 52mm;
+  }
+  .compact-cohort-item {
+    min-width: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .compact-cohort-item img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 68mm;
+    margin: 0 auto;
+    object-fit: contain;
+    border: 0;
+    border-radius: 14px;
+    box-shadow: 0 5px 10px rgba(17, 35, 29, .16), 0 15px 26px rgba(17, 35, 29, .12); /* taste-skill-ignore: user requested rounded, dimensional cohort photos. */
+  }
+  .compact-cohort-item figcaption {
+    margin-top: 1.2mm;
+    color: var(--green-dark);
+    font-size: 7.2pt;
+    font-weight: 800;
+    letter-spacing: .035em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .compact-cohort-gallery.aws-inline {
+    margin-top: 1.2mm;
+  }
+  .compact-cohort-gallery.aws-inline img {
+    max-width: 76mm;
+    max-height: 31mm;
+  }
+  .compact-cohort-gallery.aws-inline figcaption {
+    margin-top: .6mm;
+  }
+
+
+  .cohort-pair-page > h2 {
+    margin-bottom: 2mm;
+  }
+  .cohort-half-gallery {
+    display: grid;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 2mm;
+    height: 246mm;
+  }
+  .cohort-half-gallery.single-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 2mm auto 0;
+  }
+  .cohort-half-gallery.single-photo .cohort-half-item {
+    display: block;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+  .cohort-half-gallery.single-photo .cohort-half-item img {
+    width: 145mm;
+    max-width: 100%;
+    max-height: 105mm;
+    height: auto;
+    margin: 0 auto;
+  }
+  .cohort-half-item {
+    min-height: 0;
+    margin: 0;
+    padding: 1.5mm 2mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+  }
+  .cohort-half-item img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 105mm;
+    object-fit: contain;
+  }
+  .servicenow-cohort-gallery {
+    display: grid;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    height: 144mm;
+    gap: 1.5mm;
+    margin-top: 1.5mm;
+  }
+  .servicenow-cohort-gallery .cohort-half-item {
+    padding: .5mm;
+  }
+  .servicenow-cohort-gallery .cohort-half-item img {
+    max-height: 68mm;
+  }
+  .pega-program-page .pega-inline-cohort-photo {
+    margin: 1.5mm auto 0;
+    overflow: visible;
+  }
+  .pega-program-page .pega-inline-cohort-photo img {
+    display: block;
+    width: 145mm;
+    max-width: 100%;
+    max-height: 105mm;
+    height: auto;
+    margin: 0 auto;
+  }
+  .pega-extra-gallery {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    gap: 1.5mm;
+  }
+  .pega-extra-gallery .cohort-half-item img {
+    max-height: 75mm;
+  }
+  .cohort-half-item figcaption {
+    flex: 0 0 auto;
+    margin-top: 1.2mm;
+    color: var(--green-dark);
+    font-size: 8pt;
+    font-weight: 800;
+    letter-spacing: .04em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .servicenow-inline-photo {
+    margin: 2mm auto 0;
+    overflow: visible;
+  }
+  .servicenow-inline-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .cohort-photo-full,
+  .cohort-photo-claude-img,
+  .proof-photo-img,
+  .compact-cohort-item img,
+  .cohort-half-item img,
+  .automation-photo-page .automation-cohort-photo img,
+  .pega-program-page .pega-inline-cohort-photo img,
+  .servicenow-inline-photo img {
+    border: 0 !important;
+    border-radius: 14px !important;
+    box-shadow: 0 5px 10px rgba(17, 35, 29, .16), 0 15px 26px rgba(17, 35, 29, .12) !important; /* taste-skill-ignore: user requested rounded, dimensional cohort photos. */
+  }
+
+  @media print {
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+    body { 
+      background: #fff; 
+      -webkit-print-color-adjust: exact; 
+      print-color-adjust: exact; 
+    }
+    .page { 
+      width: 210mm;
+      height: 297mm;
+      min-height: 297mm;
+      max-height: 297mm;
+      margin: 0; 
+      border-radius: 0;
+      break-after: page;
+      break-inside: avoid;
+      page-break-after: always;
+      page-break-inside: avoid;
+    }
+    .cert-badge-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14mm;
+      margin: 2mm 0 2.5mm;
+    }
+    .cert-badge {
+      height: 64mm;
+      width: auto;
+      max-width: 100mm;
+      object-fit: contain;
+      filter: drop-shadow(4.5px 4.5px 9px #cdd8de) drop-shadow(-4.5px -4.5px 9px #ffffff); /* taste-skill-ignore: dimensional finish on supplied certification badges. */
+    }
+    /* Compact layout for high-density pages */
+    .page-compact .section {
+      margin-bottom: 2mm;
+    }
+    .page-compact .partner-logos {
+      margin: 1.2mm 0 1.8mm;
+    }
+    .page-compact .partner-logo3d {
+      height: 24mm !important;
+    }
+    .page-compact .partner-logo3d.openai-select-logo {
+      height: 42mm !important;
+    }
+    .page-compact p {
+      margin: 0 0 1.5mm;
+      font-size: 8.8pt;
+      line-height: 1.35;
+    }
+    .page-compact ul {
+      margin: 0.6mm 0 0 0;
+    }
+    .page-compact li {
+      font-size: 8.4pt;
+      line-height: 1.3;
+      margin: 0.3mm 0;
+    }
+    .page-compact .cert-badge-row {
+      margin: 1.5mm 0 1.8mm;
+    }
+    .page-compact .cert-badge {
+      height: 34mm;
+      max-width: 90mm;
+    }
+    .page-compact .outcome {
+      margin-top: 1.6mm;
+      padding: 1.8mm 3.5mm;
+    }
+    .academy-proof-row {
+      display: flex !important;
+      background: #f6faf7 !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .proof-photo-img {
+      height: 38mm !important;
+    }
+    .cert-badge-compact {
+      height: 36mm !important;
+      max-width: 36mm !important;
+    }
+    .cohort-photo-claude-img {
+      max-height: 105mm !important;
+    }
+    .outcome {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+  }
+
+/* Static Technical Hub print design, guided by the forest-and-gold brochure reference. */
+  :root {
+    --green: #0f8a3c;
+    --green-dark: #0b5d2b;
+    --lime: #7a8a5e;
+    --gold: #f7b500;
+    --ink: #202923;
+    --muted: #59665d;
+    --line: #d9e1d8;
+    --soft: #f7f6ef;
+    --soft-green: #edf4ec;
+    --paper: #fffdf8;
+    --sage: #7a8a5e;
+  }
+  html, body {
+    color: var(--ink);
+    background: #e9ede8;
+  }
+  .page {
+    background-color: var(--paper);
+  }
+  .page:not(.cover-page)::before,
+  .cover-page::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 1.8mm;
+    background: var(--green-dark);
+    z-index: 2;
+  }
+  .page:not(.cover-page)::after,
+  .cover-page::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 16mm;
+    width: 22mm;
+    height: 1.8mm;
+    background: var(--lime);
+    z-index: 3;
+  }
+  .cover-page::before,
+  .cover-page::after {
+    height: 2.4mm;
+  }
+  .cover-decor,
+  .cover-decor-two {
+    display: none;
+  }
+  .cover-top {
+    margin-top: 40mm;
+  }
+  .cover-title {
+    max-width: 174mm;
+    margin: 14mm auto 0;
+    text-align: left;
+  }
+  h1 {
+    max-width: none;
+    margin: 4mm 0 3mm;
+    color: var(--green-dark);
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    line-height: 1.08;
+    letter-spacing: -.025em;
+    font-weight: 800;
+  }
+  .subtitle {
+    max-width: none;
+    color: var(--ink);
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+  .collab {
+    margin-top: 5mm;
+    color: var(--muted);
+    font-size: 10.5pt;
+    line-height: 1.45;
+  }
+  .cover-vision {
+    margin-top: 12mm;
+    border: 0;
+    border-left: 1.3mm solid var(--gold);
+    border-radius: 0 2.5mm 2.5mm 0;
+    background: var(--soft-green);
+    padding: 6mm 8mm;
+    text-align: left;
+  }
+  .cover-vision .label {
+    color: var(--green-dark);
+    font-size: 9pt;
+    letter-spacing: .08em;
+  }
+  .cover-vision .vision-text {
+    color: var(--ink);
+    font-size: 12pt;
+    line-height: 1.45;
+  }
+  .date {
+    margin-top: 10mm;
+    color: var(--green-dark);
+    text-align: right;
+  }
+  .header {
+    min-height: 8mm;
+    margin-bottom: 3mm;
+    padding: 0 0 2mm;
+    border: 0;
+    border-bottom: .35mm solid var(--line);
+    border-radius: 0;
+    background: transparent;
+  }
+  .header-left {
+    color: var(--green-dark);
+    font-size: 9pt;
+    letter-spacing: .025em;
+  }
+  .header-right {
+    color: #43564b;
+    font-size: 8.2pt;
+  }
+  h2 {
+    margin-bottom: 2.3mm;
+    padding-left: 3mm;
+    border-left: 1.1mm solid var(--gold);
+    color: var(--green-dark);
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 15.5pt;
+    line-height: 1.18;
+    font-weight: 800;
+  }
+  p {
+    color: var(--ink);
+    font-size: 9.5pt;
+    line-height: 1.45;
+  }
+  li {
+    color: var(--ink);
+    font-size: 8.9pt;
+    line-height: 1.38;
+  }
+  li::marker {
+    color: var(--green);
+  }
+  .page-compact h2 {
+    font-size: 15pt;
+  }
+  .page-compact .partner-logo3d {
+    height: 26mm !important;
+  }
+  .page-compact .partner-logo3d.openai-select-logo {
+    height: 42mm !important;
+  }
+  .page-compact p {
+    color: var(--ink);
+    font-size: 9pt;
+    line-height: 1.4;
+  }
+  .page-compact li {
+    font-size: 8.6pt;
+    line-height: 1.34;
+  }
+  .outcome {
+    border: 0;
+    border-left: 1mm solid var(--green);
+    border-radius: 0 2mm 2mm 0;
+    background: var(--soft-green);
+    padding: 3mm 4mm;
+  }
+  .page-compact .outcome {
+    padding: 2.2mm 3.5mm;
+  }
+  .outcome-title {
+    color: var(--green-dark);
+    font-size: 8.2pt;
+    letter-spacing: .055em;
+  }
+  .small-note {
+    color: #48584f;
+    font-size: 8.5pt;
+    line-height: 1.42;
+  }
+  .certification-count > span {
+    border: 0;
+    border-left: 1mm solid var(--gold);
+    border-radius: 2mm;
+    background: #f3f5ed;
+    color: var(--green-dark);
+    font-size: 7.2pt;
+  }
+  .certification-count strong {
+    color: var(--green-dark);
+    font-variant-numeric: tabular-nums;
+  }
+  .cert-badge-count-layout .certification-count > span,
+  .vendor-pathway-page .certification-count > span {
+    border-top: 0;
+    border-left: 1mm solid var(--gold);
+    background: #f3f5ed;
+  }
+  .vendor-pathway-strip {
+    margin-top: 3mm;
+    padding-top: 2mm;
+    border-top: 0;
+    background: transparent;
+  }
+  .vendor-pathway-strip-title {
+    color: var(--green-dark);
+    font-size: 8.4pt;
+    letter-spacing: .07em;
+  }
+  .vendor-pathway-step {
+    min-height: 34mm;
+    border: 0;
+    border-top: 1mm solid var(--green);
+    border-radius: 0 2mm 2mm 2mm;
+    background: #f0f5ef;
+  }
+  .vendor-pathway-step:nth-child(2) {
+    border-top-color: var(--gold);
+    background: #f7f5ed;
+  }
+  .vendor-pathway-step:nth-child(3) {
+    border-top-color: var(--sage);
+    background: #f0f3eb;
+  }
+  .vendor-pathway-step-number {
+    width: 8.5mm;
+    height: 8.5mm;
+    border-radius: 1.2mm;
+  }
+  .vendor-pathway-step-title {
+    color: var(--green-dark);
+    font-size: 8.5pt;
+  }
+  .vendor-pathway-step-copy {
+    color: #48584f;
+    font-size: 8pt;
+  }
+  .vendor-focus-heading {
+    color: var(--green-dark);
+    font-size: 8pt;
+    letter-spacing: .06em;
+  }
+  .footer {
+    border: 0;
+    border-top: .3mm solid var(--line);
+    border-radius: 0;
+    background: transparent;
+    padding: 1.7mm 0;
+    color: var(--muted);
+    font-size: 8pt;
+  }
+  .cover-footer {
+    background: transparent;
+    border: 0;
+  }
+  .partner-logos {
+    margin: 2.5mm 0 3mm;
+  }
+  .knowledge-graph-page h2 {
+    margin: 2mm 0 1mm;
+  }
+  .knowledge-graph-intro {
+    margin: 0 0 1mm;
+    color: var(--muted);
+    font-size: 8.8pt;
+  }
+  .knowledge-graph-svg {
+    display: block;
+    width: 100%;
+    height: 225mm;
+    margin: 0 auto;
+  }
+  .kg-edge {
+    fill: none;
+    stroke: #9bac9e;
+    stroke-width: 3;
+    marker-end: url(#kg-arrow);
+  }
+  .kg-edge-gold {
+    stroke: var(--gold);
+    stroke-width: 4;
+  }
+  .kg-org {
+    fill: #f0f5ee;
+  }
+  .kg-org-hub {
+    fill: var(--green-dark);
+  }
+  .kg-process {
+    fill: #eef4ec;
+  }
+  .kg-card {
+    fill: #f6f7f1;
+  }
+  .kg-card-alt {
+    fill: #f8f5ec;
+  }
+  .kg-card-accent-green {
+    fill: var(--green);
+  }
+  .kg-card-accent-gold {
+    fill: var(--gold);
+  }
+  .kg-card-accent-sage {
+    fill: var(--sage);
+  }
+  .kg-org-title {
+    fill: var(--green-dark);
+    font: 800 25px "Segoe UI", Arial, sans-serif;
+    letter-spacing: .6px;
+  }
+  .kg-org-title-light {
+    fill: #fffdf8;
+  }
+  .kg-org-subtitle {
+    fill: var(--muted);
+    font: 500 16px "Segoe UI", Arial, sans-serif;
+  }
+  .kg-org-subtitle-light {
+    fill: #e3efdf;
+  }
+  .kg-relation {
+    fill: var(--green-dark);
+    font: 800 13px "Segoe UI", Arial, sans-serif;
+    letter-spacing: .7px;
+  }
+  .kg-process-title {
+    fill: var(--green-dark);
+    font: 800 16px "Segoe UI", Arial, sans-serif;
+    letter-spacing: .7px;
+  }
+  .kg-process-copy {
+    fill: var(--ink);
+    font: 600 17px "Segoe UI", Arial, sans-serif;
+  }
+  .kg-card-title {
+    fill: var(--green-dark);
+    font: 800 21px "Segoe UI", Arial, sans-serif;
+  }
+  .kg-card-label {
+    fill: #718073;
+    font: 800 12px "Segoe UI", Arial, sans-serif;
+    letter-spacing: .8px;
+  }
+  .kg-card-partners {
+    fill: var(--green-dark);
+    font: 700 15px "Segoe UI", Arial, sans-serif;
+  }
+  .kg-card-copy {
+    fill: var(--ink);
+    font: 500 14px "Segoe UI", Arial, sans-serif;
+  }
+  .kg-outcome {
+    fill: var(--green-dark);
+    font: 750 16px "Segoe UI", Arial, sans-serif;
+  }
+  .kg-outcome-final {
+    fill: #fffdf8;
+  }
+  .kg-outcome-node {
+    fill: #edf4ec;
+  }
+  .kg-outcome-node-final {
+    fill: var(--green-dark);
+  }
+</style>
+</head>
+<body>
+
+<!-- ==========================================
+     PAGE 1: COVER PAGE
+=========================================== -->
+<section class="page cover-page">
+  <div class="cover-decor"></div>
+  <div class="cover-decor-two"></div>
+
+  <div class="cover-top">
+    <div class="logo-box">
+      <img class="logo-th" src="assets/Technical Hub.png" alt="Technical Hub logo">
+    </div>
+    <div class="logo-divider"></div>
+    <div class="logo-box">
+      <img class="logo-srm" src="assets/srm-university.png" alt="SRM University logo">
+    </div>
+  </div>
+
+  <div class="cover-title">
+    <h1>SRM AI &amp; Enterprise Centers of Excellence</h1>
+    <p class="subtitle">AI &amp; Enterprise Technologies | Industry-Certified Learning Pathways | Institutional Excellence</p>
+    <p class="collab">A strategic collaboration proposal between<br><strong>SRM University and Technical Hub</strong></p>
+  </div>
+
+  <div class="cover-vision">
+    <div class="label">Vision</div>
+    <p class="vision-text">Build an industry-connected technology ecosystem that grows certified talent, supports applied innovation, and creates lasting institutional capability.</p>
+  </div>
+
+  <div class="date">October 2026</div>
+
+  <div class="footer cover-footer">Technical Hub | SRM University</div>
+</section>
+
+<!-- ==========================================
+     PAGE 2: EXECUTIVE SUMMARY, OBJECTIVES & CLAUDE COE
+=========================================== -->
+<section class="page">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">Technical Hub | AI &amp; Enterprise CoE Initiative | SRM University</div>
+  </div>
+
+  <div class="section">
+    <h2>1. Executive Summary</h2>
+    <p>Technical Hub proposes a strategic collaboration with SRM University to establish dedicated Centers of Excellence and industry-certified learning pathways spanning artificial intelligence, enterprise automation, cloud infrastructure, and low-code platforms. The initiative transitions technical learning beyond standalone workshops into structured, accredited, project-based pathways.</p>
+  </div>
+
+  <div class="section">
+    <h2>2. Objectives</h2>
+    <ul>
+      <li>Establish premier Centers of Excellence across advanced AI, platform automation, and cloud technologies.</li>
+      <li>Integrate globally recognized industry certification pathways with defined academic outcomes and university credits.</li>
+      <li>Cultivate high-impact student projects, enterprise use cases, hackathons, and research publications.</li>
+      <li>Enable faculty upskilling and sustainable internal delivery capabilities across leading tech stacks.</li>
+    </ul>
+  </div>
+
+  <!-- 3. CLAUDE CENTRE OF EXCELLENCE (ONLY CLAUDE) -->
+  <div class="section">
+    <h2>3. Claude Centre of Excellence</h2>
+    <div class="partner-logos" style="justify-content: space-around;">
+      <div class="assoc-box">
+        <img src="assets/th_logo.png" alt="Technical Hub" class="partner-logo3d" style="height: 27mm;" title="Technical Hub">
+      </div>
+      <div>
+        <img src="assets/claude.png" alt="Claude Certified Services Partner" class="partner-logo3d" style="height: 38mm;" title="Claude">
+      </div>
+    </div>
+
+    <p>The proposed Claude Centre of Excellence functions as the university's dedicated hub for Anthropic Claude foundational models, application development, autonomous AI agents, and enterprise AI solutions.</p>
+    <ul>
+      <li>Claude AI, prompt engineering, structured reasoning, and foundational model mastery</li>
+      <li>Hands-on application development with Anthropic Claude platform, Claude Sonnet/Opus, and REST APIs</li>
+      <li>Autonomous AI agents, tool use, and Model Context Protocol (MCP) integrations</li>
+      <li>Enterprise AI use cases, domain-specific retrieval, and real-world deployment patterns</li>
+      <li>Student and faculty AI research, innovation challenges, and ecosystem showcases</li>
+    </ul>
+    <div class="outcome">
+      <div class="outcome-title">Claude CoE Outcome</div>
+      <div class="small-note">A dedicated campus innovation hub enabling continuous Claude AI learning, application engineering, autonomous agents, and enterprise problem-solving.</div>
+    </div>
+  </div>
+
+  <div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 2</span></div>
+</section>
+
+<!-- ==========================================
+     PAGE 3: 4. OPENAI COE & 5. AI READY ENGINEER
+=========================================== -->
+<section class="page page-compact">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">Technical Hub | AI &amp; Enterprise CoE Initiative | SRM University</div>
+  </div>
+
+  <!-- 4. OPENAI CENTRE OF EXCELLENCE -->
+  <div class="section">
+    <h2>4. OpenAI Centre of Excellence</h2>
+    <div class="partner-logos" style="justify-content: space-around;">
+      <div class="assoc-box">
+        <img src="assets/th_logo.png" alt="Technical Hub" class="partner-logo3d" style="height: 27mm;" title="Technical Hub">
+      </div>
+      <div>
+        <img src="assets/openai_square.png" alt="OpenAI Select Partner" class="partner-logo3d openai-select-logo" style="height: 42mm;" title="OpenAI">
+      </div>
+    </div>
+
+    <p>The OpenAI Centre of Excellence will serve as SRM University's premier facility for OpenAI tools, ChatGPT integration, API engineering, intelligent agents, and applied artificial intelligence.</p>
+    <ul>
+      <li>OpenAI foundational models, ChatGPT advanced data analysis, and prompt design</li>
+      <li>OpenAI API engineering: GPT-4o, function calling, JSON schema outputs, and vision integration</li>
+      <li>Assistants API, Code Interpreter, file search, and custom agent toolsets</li>
+      <li>Vector embeddings, semantic search, and Retrieval-Augmented Generation (RAG) architectures</li>
+      <li>Applied AI capstone projects, industry hackathons, and OpenAI Select partner engagements</li>
+    </ul>
+    <div class="outcome">
+      <div class="outcome-title">OpenAI CoE Outcome</div>
+      <div class="small-note">An AI development center where students and faculty build production-ready applied AI solutions with OpenAI technologies.</div>
+    </div>
+  </div>
+
+  <!-- 5. AI READY ENGINEER -->
+  <div class="section">
+    <h2>5. AI Ready Engineer</h2>
+    <div class="partner-logos" style="justify-content: space-around;">
+      <div class="assoc-box">
+        <img src="assets/th_logo.png" alt="Technical Hub" class="partner-logo3d" style="height: 27mm;" title="Technical Hub">
+      </div>
+      <div>
+        <img src="assets/AI Ready Engineer AI Logo.png" alt="AI Ready Engineer" class="partner-logo3d" style="height: 30mm;" title="AI Ready Engineer">
+      </div>
+    </div>
+
+    <p>The AI Ready Engineer initiative is a specialized certification pathway preparing students for modern software engineering workflows through intensive Claude and GitHub Copilot enablement.</p>
+    <ul>
+      <li>AI-assisted coding, contextual code generation, and intelligent autocomplete with GitHub Copilot</li>
+      <li>Deep architectural analysis, multi-file code review, and automated testing via Claude AI</li>
+      <li>Prompt engineering patterns for software development, debugging, and legacy code migration</li>
+      <li>Integration of AI coding assistants across industry-standard IDEs (VS Code, JetBrains)</li>
+      <li>Curriculum and mock assessments aligned with industry-standard AI Engineer certifications</li>
+    </ul>
+    <div class="cert-badge-count-layout">
+      <div class="cert-badge-row">
+      <img src="assets/badge-copilot-CXyQbEb_.png" alt="GitHub Copilot Certified" class="cert-badge" title="GitHub Copilot Certified">
+      <img src="assets/claude cert.png" alt="Claude Certified Architect" class="cert-badge" title="Claude Certified Architect">
+    </div>
+      <div class="certification-count"><span>GitHub certification total<strong>179</strong></span></div>
+    </div>
+    <div class="outcome">
+      <div class="outcome-title">AI Ready Engineer Outcome</div>
+      <div class="small-note">Industry-ready software developers with certified mastery in AI pair programming, augmented productivity, and end-to-end AI-assisted engineering.</div>
+      
+    </div>
+  </div>
+
+  <div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 3</span></div>
+</section>
+
+<section class="page cohort-photo-page">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">AI Ready Engineer | Certified Student Cohorts</div>
+  </div>
+  <div class="section">
+    <div class="cohort-frame-full">
+      <img src="assets/GroupPhotos/claude.jpg" alt="AI Ready Engineer Claude cohort; 900+ students completed Anthropic courses" class="cohort-photo-full" title="AI Ready Engineer Claude cohort">
+    </div>
+    <div class="cohort-frame-full">
+      <img src="assets/GroupPhotos/github.jpg" alt="AI Ready Engineer GitHub Foundations cohort" class="cohort-photo-full" title="AI Ready Engineer GitHub Foundations cohort">
+    </div>
+  </div>
+  <div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 4</span></div>
+</section>
+
+<!-- ==========================================
+     PAGE 5: 6. SERVICENOW TRAINING & PLACEMENT SUPPORT
+=========================================== -->
+<section class="page page-compact">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">Technical Hub | AI &amp; Enterprise CoE Initiative | SRM University</div>
+  </div>
+
+  <!-- 6. SERVICENOW TRAINING & PLACEMENT SUPPORT -->
+  <div class="section">
+    <h2>6. ServiceNow Training &amp; Placement Support</h2>
+    <div class="partner-logos" style="justify-content: space-around;">
+      <div class="assoc-box">
+        <img src="assets/th_logo.png" alt="Technical Hub" class="partner-logo3d" style="height: 27mm;" title="Technical Hub">
+      </div>
+      <div>
+        <img src="assets/servicenow.svg" alt="ServiceNow" class="partner-logo3d" style="height: 28mm;" title="ServiceNow">
+      </div>
+    </div>
+
+    <p>Technical Hub provides ServiceNow training on the enterprise Now Platform, preparing students for cloud workflow administration, ITSM solutions, and certification examinations. The team also provides placement assistance to help students prepare for relevant career opportunities.</p>
+    <ul>
+      <li>ServiceNow architecture, lists, forms, data dictionary, tables, and schema relationships</li>
+      <li>User administration, security rules, role-based access control (RBAC), and permissions</li>
+      <li>Process automation with Flow Designer, Business Rules, Client Scripts, and ITSM solutions</li>
+      <li>Preparation for <strong>ServiceNow Certified System Administrator (CSA)</strong> and <strong>Application Developer (CAD)</strong> certifications</li>
+      <li>Placement assistance, including interview preparation and career guidance for ServiceNow roles</li>
+    </ul>
+    <div class="cert-badge-count-layout">
+      <div class="cert-badge-row">
+      <img src="assets/servicenow_cert_2.png" alt="ServiceNow Certified System Administrator (CSA)" class="cert-badge" title="ServiceNow Certified System Administrator (CSA)">
+      <img src="assets/servicenow_cert_1.png" alt="ServiceNow Certified Application Developer (CAD)" class="cert-badge" title="ServiceNow Certified Application Developer (CAD)">
+    </div>
+      <div class="certification-count"><span>ServiceNow certification total<strong>359</strong></span></div>
+    </div>
+    <div class="outcome">
+      <div class="outcome-title">ServiceNow Training &amp; Placement Outcome</div>
+      <div class="small-note">Students build practical ServiceNow administration and application development skills, with support for certification preparation and placement readiness.</div>
+      
+    </div>
+    <div class="servicenow-cohort-gallery" aria-label="ServiceNow student cohorts">
+      <figure class="cohort-half-item">
+        <img src="assets/GroupPhotos/servicenow.jpg" alt="ServiceNow Developer student cohort" title="ServiceNow Developer cohort">
+      </figure>
+      <figure class="cohort-half-item">
+        <img src="assets/GroupPhotos/servicenow%20admin.jpg" alt="ServiceNow Administrator student cohort" title="ServiceNow Administrator cohort">
+      </figure>
+    </div>
+  </div>
+
+  
+
+<div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 5</span></div>
+</section>
+<!-- ==========================================
+     PAGE 7: 7. PEGA UNIVERSITY PROGRAM
+=========================================== -->
+
+<section class="page page-compact pega-program-page">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">Pega University Program | Training &amp; Certification</div>
+  </div>
+  <div class="section">
+    <h2>7. Pega University Program</h2>
+    <div class="partner-logos" style="justify-content: space-around;">
+      <div class="assoc-box">
+        <img src="assets/th_logo.png" alt="Technical Hub" class="partner-logo3d" style="height: 27mm;" title="Technical Hub">
+      </div>
+      <div>
+        <img src="assets/pega.png" alt="Pega University Program" class="partner-logo3d" style="height: 30mm;" title="Pega University Program">
+      </div>
+    </div>
+    <p>Through the Pega University Program, Technical Hub prepares students for enterprise low-code digital process automation, customer engagement architecture, and certified application development.</p>
+    <ul>
+      <li>Pega Infinity architecture, case lifecycle management, data modeling, and user portal design</li>
+      <li>Business rules configuration, decision tables, decision trees, and routing strategies</li>
+      <li>Integration services: REST/SOAP connectors, background processing, and Tracer debugging</li>
+      <li>Targeted preparation for <strong>Pega Certified System Architect (CSA)</strong> and <strong>Senior System Architect (CSSA)</strong> pathways</li>
+    </ul>
+    <div class="cert-badge-count-layout">
+      <div class="cert-badge-row">
+        <img src="assets/pega_csa.png" alt="Pega Certified System Architect (CSA)" class="cert-badge" title="Pega Certified System Architect (CSA)">
+        <img src="assets/pega_cssa.png" alt="Pega Certified Senior System Architect (CSSA)" class="cert-badge" title="Pega Certified Senior System Architect (CSSA)">
+      </div>
+      <div class="certification-count"><span>Pega certification total<strong>462</strong></span></div>
+    </div>
+    <div class="outcome">
+      <div class="outcome-title">Pega Program Outcome</div>
+      <div class="small-note">High-demand low-code enterprise architects with certified capabilities in orchestrating complex business processes on the Pega platform.</div>
+    </div>
+  </div>
+  <figure class="pega-inline-cohort-photo">
+    <img src="assets/GroupPhotos/pega%20csa.jpg" alt="Pega Certified System Architect student cohort" title="Pega Certified System Architect student cohort">
+  </figure>
+  <div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 6</span></div>
+</section>
+
+<section class="page cohort-pair-page">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">Pega University Program | Student Cohorts</div>
+  </div>
+  <div class="cohort-half-gallery pega-extra-gallery" aria-label="Pega student cohort photos">
+    <figure class="cohort-half-item">
+      <img src="assets/GroupPhotos/pega%20cssa.jpg" alt="Pega Certified Senior System Architect student cohort" title="Pega Certified Senior System Architect student cohort">
+    </figure>
+    <figure class="cohort-half-item">
+      <img src="assets/GroupPhotos/pega%202.jpeg" alt="Pega student cohort 2 in a classroom training session" title="Pega classroom training cohort">
+    </figure>
+    <figure class="cohort-half-item">
+      <img src="assets/GroupPhotos/pega%203.jpeg" alt="Pega student cohort 3 at a certification ceremony" title="Pega certification ceremony cohort">
+    </figure>
+  </div>
+  <div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 7</span></div>
+</section>
+
+
+
+
+
+
+<!-- ==========================================
+     PAGE 10: 8. RED HAT ACADEMY
+=========================================== -->
+<section class="page page-compact">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">Technical Hub | AI &amp; Enterprise CoE Initiative | SRM University</div>
+  </div>
+
+  <!-- 8. RED HAT ACADEMY -->
+  <div class="section">
+    <h2>8. Red Hat Academy</h2>
+    <div class="partner-logos" style="justify-content: space-around;">
+      <div class="assoc-box">
+        <img src="assets/th_logo.png" alt="Technical Hub" class="partner-logo3d" style="height: 27mm;" title="Technical Hub">
+      </div>
+      <div>
+        <img src="assets/redhat.png" alt="Red Hat Academy" class="partner-logo3d" style="height: 30mm;" title="Red Hat Academy">
+      </div>
+    </div>
+
+    <p>As an authorized Red Hat Academy partner, Technical Hub equips students with industry-standard Linux system administration, virtualization, container basics, and enterprise server infrastructure skills.</p>
+    <ul>
+      <li>Red Hat Enterprise Linux (RHEL) system administration, shell scripting, file management, and package deployment</li>
+      <li>User accounts, security permissions, access control lists (ACLs), and systemd service management</li>
+      <li>Storage management: Logical Volume Manager (LVM), partitions, networking, and firewall administration</li>
+      <li>Targeted preparation for the gold-standard <strong>Red Hat Certified System Administrator (RHCSA â€“ EX200)</strong> credential</li>
+    </ul>
+    <div class="cert-badge-count-layout">
+      <div class="cert-badge-row">
+      <img src="assets/rhcsa.png" alt="Red Hat Certified System Administrator (RHCSA)" class="cert-badge" title="Red Hat Certified System Administrator (RHCSA)">
+    </div>
+      <div class="certification-count"><span>Red Hat certification total<strong>544</strong></span></div>
+    </div>
+    <div class="outcome">
+      <div class="outcome-title">Red Hat Academy Outcome</div>
+      <div class="small-note">Certified Linux infrastructure administrators proficient in enterprise server deployment, cloud-native administration, and RHCSA readiness.</div>
+      
+    </div>
+  </div>
+  <div class="compact-cohort-gallery single" aria-label="Student cohort photos">
+    <figure class="compact-cohort-item">
+      <img src="assets/GroupPhotos/rehat.png" alt="Red Hat Certified System Administrator student cohorts" title="Red Hat Certified System Administrator student cohorts">
+    </figure>
+  </div>
+
+
+  <div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 8</span></div>
+</section>
+
+
+
+<!-- ==========================================
+     PAGE 12: 9. MONGODB UNIVERSITY
+=========================================== -->
+<section class="page page-compact">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">Technical Hub | AI &amp; Enterprise CoE Initiative | SRM University</div>
+  </div>
+
+  <div class="section">
+    <h2>9. MongoDB University</h2>
+    <div class="partner-logos" style="justify-content: space-around;">
+      <div class="assoc-box">
+        <img src="assets/th_logo.png" alt="Technical Hub" class="partner-logo3d" style="height: 27mm;" title="Technical Hub">
+      </div>
+      <div>
+        <img src="assets/mongodb.svg" alt="MongoDB University" class="partner-logo3d" style="height: 30mm;" title="MongoDB University">
+      </div>
+    </div>
+
+    <p>The MongoDB University initiative provides students with rigorous NoSQL document database design, query optimization, high-throughput aggregation, and modern application persistence skills.</p>
+    <ul>
+      <li>NoSQL document modeling, JSON/BSON paradigms, flexible schema design, and relational comparisons</li>
+      <li>CRUD operations, complex querying, projection, update operators, and performance tuning</li>
+      <li>Advanced MongoDB Aggregation Pipeline: multi-stage grouping, transformations, and analytics</li>
+      <li>Application driver integration (Node.js/Python/Java) and preparation for <strong>MongoDB Associate Developer</strong> certification</li>
+    </ul>
+    <div class="cert-badge-count-layout">
+      <div class="cert-badge-row">
+      <img src="assets/mongodb_associate_developer.png" alt="MongoDB Certified Associate Developer" class="cert-badge" title="MongoDB Certified Associate Developer">
+    </div>
+      <div class="certification-count"><span>MongoDB certification total<strong>188</strong></span></div>
+    </div>
+    <div class="outcome">
+      <div class="outcome-title">MongoDB University Outcome</div>
+      <div class="small-note">Certified NoSQL database developers equipped to design, build, and optimize high-performance data layers for modern distributed applications.</div>
+      
+    </div>
+  </div>
+  <div class="compact-cohort-gallery single" aria-label="Student cohort photos">
+    <figure class="compact-cohort-item">
+      <img src="assets/GroupPhotos/mongodb.jpg" alt="MongoDB Associate Developer certified student cohort" title="MongoDB Associate Developer certified student cohort">
+    </figure>
+  </div>
+
+  <div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 9</span></div>
+</section>
+
+
+
+<!-- ==========================================
+     PAGE 14: 10. AUTOMATION ANYWHERE & 11. CISCO NETWORKING ACADEMY
+=========================================== -->
+<section class="page page-compact automation-photo-page">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">Automation Anywhere | Training &amp; Certification</div>
+  </div>
+
+  <!-- 10. AUTOMATION ANYWHERE -->
+  <div class="section">
+    <h2>10. Automation Anywhere</h2>
+    <div class="partner-logos" style="justify-content: space-around;">
+      <div class="assoc-box">
+        <img src="assets/th_logo.png" alt="Technical Hub" class="partner-logo3d" style="height: 27mm;" title="Technical Hub">
+      </div>
+      <div>
+        <img src="assets/Automation Anywhere.png" alt="Automation Anywhere Accredited Partner" class="partner-logo3d" style="height: 30mm;" title="Automation Anywhere">
+      </div>
+    </div>
+
+    <p>Technical Hub establishes an intelligent automation pathway cultivating skills in Robotic Process Automation (RPA), cognitive automation, and GenAI-integrated bot development on Automation 360.</p>
+    <ul>
+      <li>Automation 360 architecture, Control Room, Bot Creator, Bot Runner, and process recording</li>
+      <li>Automated data extraction, web automation, Excel integration, API orchestration, and error handling</li>
+      <li>Document automation utilizing IQ Bot with machine learning and intelligent document processing (IDP)</li>
+      <li>AI-powered intelligent bots integrating generative AI models with automated operational tasks</li>
+      <li>Comprehensive preparation for <strong>Automation Anywhere Certified Advanced RPA Professional</strong> credential</li>
+    </ul>
+    <div class="outcome">
+      <div class="outcome-title">Automation Anywhere Outcome</div>
+      <div class="small-note">Accredited intelligent automation specialists capable of architecting and deploying end-to-end software robots across enterprise business operations.</div>
+      
+    </div>
+    <figure class="automation-cohort-photo">
+      <img src="assets/GroupPhotos/automation%20anywhere.jpeg" alt="Automation Anywhere certified student group" title="Automation Anywhere student cohort">
+    </figure>
+    <div class="certification-count"><span>Automation Anywhere certifications<strong>247</strong></span></div>
+  </div>
+  <div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 10</span></div>
+</section>
+
+<section class="page page-compact">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">Cisco Networking Academy | Training &amp; Certification</div>
+  </div>
+
+  <div class="section">
+    <h2>11. Cisco Networking Academy</h2>
+    <div class="partner-logos" style="justify-content: space-around;">
+      <div class="assoc-box">
+        <img src="assets/th_logo.png" alt="Technical Hub" class="partner-logo3d" style="height: 27mm;" title="Technical Hub">
+      </div>
+      <div>
+        <img src="assets/Cisco_Networking_Academy.svg.webp" alt="Cisco Networking Academy" class="partner-logo3d" style="height: 29mm;" title="Cisco Networking Academy">
+      </div>
+    </div>
+
+    <p>Through Cisco Networking Academy, Technical Hub provides industry-standard training in computer networking, enterprise infrastructure routing/switching, cybersecurity defense, and network automation.</p>
+    <ul>
+      <li>Network architecture, IPv4/IPv6 addressing, subnetting, VLANs, switching, and dynamic routing (OSPF)</li>
+      <li>Enterprise network security: access control lists (ACLs), VPNs, threat mitigation, and firewall policies</li>
+      <li>Cybersecurity fundamentals: threat analysis, endpoint security, and SOC operations</li>
+      <li>Network programmability, Python automation, RESTful APIs, and software-defined networking (SDN)</li>
+      <li>Preparation for <strong>Cisco Certified Network Associate (CCNA)</strong>, <strong>CISCO CyberOps Associate</strong>, and Cisco Certified Support Technician Networking and Cybersecurity certifications</li>
+    </ul>
+    <div class="cert-badge-count-layout cisco-cert-badge-layout" aria-label="Cisco certification badges and total">
+      <div class="cert-badge-row">
+        <img src="assets/Cisco Certified Network Associate badge.png" alt="Cisco Certified Network Associate badge" class="cert-badge" title="Cisco Certified Network Associate">
+        <img src="assets/CISCO CyberOps Associate badge.png" alt="CISCO CyberOps Associate badge" class="cert-badge" title="CISCO CyberOps Associate">
+        <img src="assets/Cisco Certified Support Technician Networking badge.png" alt="Cisco Certified Support Technician Networking badge" class="cert-badge" title="Cisco Certified Support Technician Networking">
+        <img src="assets/Cisco Certified Support Technician Cybersecurity badge.png" alt="Cisco Certified Support Technician Cybersecurity badge" class="cert-badge" title="Cisco Certified Support Technician Cybersecurity">
+      </div>
+      <div class="certification-count"><span>Cisco certification total<strong>123</strong></span></div>
+    </div>
+    <div class="outcome">
+      <div class="outcome-title">Cisco Academy Outcome</div>
+      <div class="small-note">Globally certified network engineers and cybersecurity analysts equipped with practical infrastructure configuration, defense, and automation expertise.</div>
+      
+    </div>
+  </div>
+
+  <div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 11</span></div>
+</section>
+
+
+<!-- ==========================================
+     PAGE 15: 12. ORACLE ACADEMY
+=========================================== -->
+<section class="page">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">Technical Hub | AI &amp; Enterprise CoE Initiative | SRM University</div>
+  </div>
+
+  <!-- 12. ORACLE ACADEMY -->
+  <div class="section">
+    <h2>12. Oracle Academy</h2>
+    <div class="partner-logos" style="justify-content: space-around;">
+      <div class="assoc-box">
+        <img src="assets/th_logo.png" alt="Technical Hub" class="partner-logo3d" style="height: 27mm;" title="Technical Hub">
+      </div>
+      <div>
+        <img src="assets/oracle_academy.png" alt="Oracle Academy" class="partner-logo3d" style="height: 25mm;" title="Oracle Academy">
+      </div>
+    </div>
+
+    <p>Technical Hub partners with Oracle Academy to provide students with hands-on Java programming, object-oriented software engineering, relational database design, and SQL mastery.</p>
+    <ul>
+      <li>Java programming fundamentals: object-oriented concepts, algorithms, collections, and exception handling</li>
+      <li>Relational database modeling, entity relationship (ER) design, normalization, and relational schema mapping</li>
+      <li>Structured Query Language (SQL) data definition, manipulation, indexing, and complex queries</li>
+      <li>Database programming with PL/SQL: stored procedures, functions, packages, and database triggers</li>
+      <li>Curriculum and practice aligned with the <strong>Java Foundations Certified Associate</strong> credential</li>
+    </ul>
+    <div class="cert-badge-count-layout">
+      <div class="cert-badge-row">
+      <img src="assets/02a_Java_Foundations_Associate.png" alt="Java Foundations Certified Associate" class="cert-badge" title="Java Foundations Certified Associate">
+    </div>
+      <div class="certification-count"><span>Oracle certification total<strong>912</strong></span></div>
+    </div>
+    <div class="outcome">
+      <div class="outcome-title">Oracle Academy Outcome</div>
+      <div class="small-note">Certified developers with strong object-oriented programming foundations, relational database design skills, and Oracle certification readiness.</div>
+      
+    </div>
+  </div>
+  <div class="compact-cohort-gallery single" aria-label="Student cohort photos">
+    <figure class="compact-cohort-item">
+      <img src="assets/GroupPhotos/java%20group.jpg" alt="Java Full Stack student cohort, 2027" title="Java Full Stack student cohort, 2027">
+    </figure>
+  </div>
+
+
+  <div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 12</span></div>
+</section>
+
+
+
+<section class="page page-compact">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">Technical Hub | AI &amp; Enterprise CoE Initiative | SRM University</div>
+  </div>
+
+  <!-- ==========================================
+       PAGE 17: 13. SPLUNK PARTNERSHIP
+  =========================================== -->
+  <!-- 13. SPLUNK PARTNERSHIP -->
+  <div class="section">
+    <h2>13. Splunk Partnership</h2>
+    <div class="partner-logos" style="justify-content: space-around;">
+      <div class="assoc-box">
+        <img src="assets/th_logo.png" alt="Technical Hub" class="partner-logo3d" style="height: 27mm;" title="Technical Hub">
+      </div>
+      <div>
+        <img src="assets/splunk.png" alt="Splunk Partner" class="partner-logo3d" style="height: 23mm;" title="Splunk">
+      </div>
+    </div>
+
+    <p>Through the Splunk Partnership, Technical Hub enables students to master big data analytics, log intelligence, cybersecurity monitoring, and enterprise observability.</p>
+    <ul>
+      <li>Machine data fundamentals, log ingestion, forwarders, indexers, and search head architecture</li>
+      <li>Splunk Search Processing Language (SPL): search commands, reporting, statistical aggregations, and subsearches</li>
+      <li>Real-time dashboard creation, alert configuration, visual data modeling, and operational monitoring</li>
+      <li>Security Information and Event Management (SIEM) workflows, threat correlation, and SOC analysis</li>
+      <li>Preparation aligned with industry observability standards and the <strong>Splunk Core Certified User</strong> pathway</li>
+    </ul>
+    <div class="outcome">
+      <div class="outcome-title">Splunk Partnership Outcome</div>
+      <div class="small-note">Data and observability specialists proficient in analyzing and visualizing machine data to drive enterprise security and operational intelligence.</div>
+    </div>
+  </div>
+
+  <!-- 14. MILE2 PARTNERSHIP -->
+  <div class="section">
+    <h2>14. Mile2 Partnership</h2>
+    <div class="partner-logos" style="justify-content: space-around;">
+      <div class="assoc-box">
+        <img src="assets/th_logo.png" alt="Technical Hub" class="partner-logo3d" style="height: 27mm;" title="Technical Hub">
+      </div>
+      <div>
+        <img src="assets/mile2_authorized_training_center_8x_enhanced.png" alt="Mile2 Authorized Training Center" class="partner-logo3d" style="height: 23mm;" title="Mile2 Authorized Training Center">
+      </div>
+    </div>
+
+    <p>As an authorized Mile2 Training Center, Technical Hub delivers globally accredited cybersecurity education, ethical hacking, digital forensics, and defensive cyber operations.</p>
+    <ul>
+      <li>Cybersecurity architecture: threat vectors, attack surfaces, security policies, and defense-in-depth strategies</li>
+      <li>Ethical hacking &amp; penetration testing: reconnaissance, scanning, vulnerability assessments, and web app auditing</li>
+      <li>Digital forensics, incident response workflows, network packet analysis, and security auditing frameworks</li>
+      <li>Alignment with globally recognized credentials: <strong>Certified Professional Ethical Hacker (C)PEH</strong> and <strong>Certified Incident Handling Engineer (C)IHE</strong></li>
+    </ul>
+    <div class="certification-count"><span>CompTIA Security+ <strong>22</strong></span><span>CPEH <strong>6</strong></span></div>
+    <div class="outcome">
+      <div class="outcome-title">Mile2 Partnership Outcome</div>
+      <div class="small-note">Accredited cybersecurity professionals skilled in penetration testing, vulnerability assessment, cyber incident response, and defensive system hardening.</div>
+      
+    </div>
+    <div class="compact-cohort-gallery single" aria-label="Cybersecurity student cohort">
+      <figure class="compact-cohort-item">
+        <img src="assets/GroupPhotos/cyber.jpg" alt="Cybersecurity trainees cohort" title="Cybersecurity trainees cohort">
+      </figure>
+    </div>
+  </div>
+
+  <div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 13</span></div>
+</section>
+
+<!-- ==========================================
+     PAGE 12: 15. AWS ACADEMY
+=========================================== -->
+<section class="page page-compact">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">Technical Hub | AI &amp; Enterprise CoE Initiative | SRM University</div>
+  </div>
+
+  <!-- 15. AWS ACADEMY -->
+  <div class="section">
+    <h2>15. AWS Academy</h2>
+    <div class="partner-logos" style="justify-content: space-around;">
+      <div class="assoc-box">
+        <img src="assets/th_logo.png" alt="Technical Hub" class="partner-logo3d" style="height: 27mm;" title="Technical Hub">
+      </div>
+      <div>
+        <img src="assets/aws_academy.png" alt="AWS Academy" class="partner-logo3d" style="height: 25mm;" title="AWS Academy">
+      </div>
+    </div>
+
+    <p>Through AWS Academy, Technical Hub prepares students for cloud computing careers, scalable cloud architecture design, serverless computing, and enterprise cloud infrastructure deployment.</p>
+    <ul>
+      <li>Cloud architecture, AWS global infrastructure, core services (EC2, S3, RDS, VPC), and security compliance</li>
+      <li>Scalable system design, high availability, load balancing, auto-scaling, and fault-tolerant cloud networks</li>
+      <li>Serverless computing with AWS Lambda, API Gateway, managed databases, and CloudWatch operational monitoring</li>
+      <li>Targeted preparation for <strong>AWS Certified Cloud Practitioner (CLF-C02)</strong> and <strong>AWS Certified Solutions Architect â€“ Associate (SAA-C03)</strong></li>
+    </ul>
+    <div class="cert-badge-count-layout">
+      <div class="cert-badge-row">
+      <img src="assets/aws_cloud_practitioner.png" alt="AWS Certified Cloud Practitioner" class="cert-badge" title="AWS Certified Cloud Practitioner">
+      <img src="assets/aws_solutions_architect.png" alt="AWS Certified Solutions Architect" class="cert-badge" title="AWS Certified Solutions Architect">
+      <img src="assets/aws%20developer%20associate.png" alt="AWS Certified Developer Associate" class="cert-badge" title="AWS Certified Developer Associate">
+    </div>
+      <div class="certification-count"><span>AWS certification total<strong>1,473</strong></span></div>
+    </div>
+    <div class="outcome">
+      <div class="outcome-title">AWS Academy Outcome</div>
+      <div class="small-note">Certified cloud architects and engineers equipped to design, deploy, and manage secure applications across AWS.</div>
+      
+    </div>
+  </div>
+  <div class="compact-cohort-gallery single" aria-label="Student cohort photos">
+    <figure class="compact-cohort-item">
+      <img src="assets/GroupPhotos/aws.jpg" alt="AWS Developer Associate certified student cohort" title="AWS Developer Associate certified student cohort">
+    </figure>
+  </div>
+
+
+  <div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 14</span></div>
+</section>
+
+
+
+<!-- ==========================================
+     PAGE 20: 16. SNOWFLAKE DATA PLATFORM
+=========================================== -->
+<section class="page page-compact">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">Technical Hub | AI &amp; Enterprise CoE Initiative | SRM University</div>
+  </div>
+
+  <div class="section">
+    <h2>16. Snowflake Data Platform</h2>
+    <div class="partner-logos" style="justify-content: space-around;">
+      <div class="assoc-box">
+        <img src="assets/th_logo.png" alt="Technical Hub" class="partner-logo3d" style="height: 27mm;" title="Technical Hub">
+      </div>
+      <div>
+        <img src="assets/sno_partner-network-logo.png" alt="Snowflake Partner Network" class="partner-logo3d" style="height: 24mm;" title="Snowflake Partner Network">
+      </div>
+    </div>
+
+    <p>The Snowflake pathway develops practical skills for working with Snowflakeâ€™s cloud data platform, from account navigation and data loading to compute management and governed data access.</p>
+    <ul>
+      <li>Navigate Snowflake accounts, databases, schemas, stages, and warehouses</li>
+      <li>Load and work with structured and semi-structured data using SQL</li>
+      <li>Manage virtual warehouses and select compute resources for workloads</li>
+      <li>Apply roles, access controls, and data governance practices</li>
+      <li>Preparation aligned with the <strong>SnowPro Associate: Platform</strong> credential</li>
+    </ul>
+    <div class="cert-badge-count-layout">
+      <div class="cert-badge-row">
+      <img src="assets/snowflake%20associate.png" alt="SnowPro Associate: Platform" class="cert-badge" title="SnowPro Associate: Platform">
+    </div>
+      <div class="certification-count"><span>SnowPro certification total<strong>134</strong></span></div>
+    </div>
+    <div class="outcome">
+      <div class="outcome-title">Snowflake Program Outcome</div>
+      <div class="small-note">Students gain foundational data platform skills in Snowflake, including data loading, compute management, SQL, and access governance.</div>
+      
+    </div>
+  </div>
+  <div class="compact-cohort-gallery single" aria-label="Student cohort photos">
+    <figure class="compact-cohort-item">
+      <img src="assets/GroupPhotos/snowflake.jpg" alt="Snowflake SnowPro Associate student cohort" title="Snowflake SnowPro Associate student cohort">
+    </figure>
+  </div>
+
+  <div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 15</span></div>
+</section>
+
+
+
+<!-- ==========================================
+     PAGE 22: 17. MICROSOFT CERTIFICATION PROGRAMS
+=========================================== -->
+<section class="page page-compact">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">Technical Hub | AI &amp; Enterprise CoE Initiative | SRM University</div>
+  </div>
+
+  <div class="section">
+    <h2>17. Microsoft Certification Programs</h2>
+    <div class="partner-logos" style="justify-content: space-around;">
+      <div class="assoc-box">
+        <img src="assets/th_logo.png" alt="Technical Hub" class="partner-logo3d" style="height: 27mm;" title="Technical Hub">
+      </div>
+      <img src="assets/microsoft-logo-png-transparent-background-1.png" alt="Microsoft" class="partner-logo3d" style="height: 24mm; max-width: 90mm;" title="Microsoft">
+    </div>
+
+    <p>The Microsoft certification pathway builds cloud and digital workplace skills through Azure, Microsoft Technology Associate (MTA), and Power Platform programs.</p>
+    <ul>
+      <li>Azure fundamentals: cloud concepts, core services, security, and governance</li>
+      <li>Azure development: application services, identity, compute, storage, and monitoring</li>
+      <li>MTA foundations across IT infrastructure, software development, databases, and networking</li>
+      <li>Power Platform: low-code apps, workflow automation, solution architecture, and Power BI analytics</li>
+      <li>Digital credentials include <strong>Azure Fundamentals</strong>, <strong>Azure Developer Associate</strong>, <strong>MTA</strong>, <strong>PL-600</strong>, and <strong>PL-300</strong></li>
+    </ul>
+    <div class="microsoft-certification-showcase">
+      <div class="cert-badge-row" aria-label="Microsoft Azure, MTA, and Power Platform certification badges">
+        <img src="assets/azure fundamentals.png" alt="Microsoft Certified Azure Fundamentals" class="cert-badge" title="Azure Fundamentals">
+        <img src="assets/azure associate transparent.png" alt="Microsoft Certified Azure Developer Associate" class="cert-badge azure-developer-badge" title="Azure Developer Associate">
+        <img src="assets/MTA.png" alt="Microsoft Technology Associate (MTA)" class="cert-badge" title="Microsoft Technology Associate">
+        <img src="assets/PL-600.png" alt="Microsoft Certified Power Platform Solution Architect Expert (PL-600)" class="cert-badge" title="Power Platform Solution Architect Expert (PL-600)">
+        <img src="assets/powerbi_data_analyst_pl300.png" alt="Microsoft Certified Power BI Data Analyst Associate (PL-300)" class="cert-badge pl300-badge" title="Power BI Data Analyst Associate (PL-300)">
+      </div>
+      <div class="certification-count microsoft-total"><span><strong>4,651</strong><small>Total Microsoft certificates</small></span></div>
+      <div class="microsoft-count-breakdown">Microsoft / Azure: 2,332 &nbsp;&bull;&nbsp; MTA: 2,319</div>
+    </div>
+    <p class="small-note" style="text-align:center; margin: 0 0 1mm;">PL-600 is shown as a legacy cohort badge; Microsoft retired the exam on June 30, 2026.</p>
+    <div class="outcome">
+      <div class="outcome-title">Microsoft Certification Program Outcome</div>
+      <div class="small-note">Students develop cloud foundations, Azure application skills, and broad IT capabilities validated through Microsoft certifications.</div>
+      
+    </div>
+  </div>
+<div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 16</span></div>
+</section>
+<section class="page cohort-pair-page">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">Microsoft Power Platform | Student Cohorts</div>
+  </div>
+  <div class="cohort-half-gallery" aria-label="Student cohort photos">
+    <figure class="cohort-half-item">
+      <img src="assets/GroupPhotos/powerplatform.jpg" alt="Power Platform Solutions Architect cohort with PL-600 badge" title="Power Platform Solutions Architect cohort with PL-600 badge">
+    </figure>
+    <figure class="cohort-half-item">
+      <img src="assets/GroupPhotos/powerplatform2.jpg" alt="Power Platform Developer Associate student cohort" title="Power Platform Developer Associate student cohort">
+    </figure>
+  </div>
+  <div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 17</span></div>
+</section>
+
+<section class="page page-compact vendor-pathway-page" style="--vendor-accent:#00a1e0;">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">Salesforce Training | Certification Pathway</div>
+  </div>
+  <div class="section">
+    <h2>18. Salesforce Certification Pathway</h2>
+    <div class="partner-logos">
+      <img src="assets/th_logo.png" alt="Technical Hub" class="partner-logo3d" title="Technical Hub">
+      <img src="assets/Salesforce.svg" alt="Salesforce" class="partner-logo3d" title="Salesforce">
+    </div>
+    <p>Technical Hub provides structured Salesforce training and placement assistance, combining guided study with hands-on practice in customer relationship management and the Salesforce platform.</p>
+    <ul>
+      <li>CRM foundations, customer data, standard objects, and sales and service workflows</li>
+      <li>Administration skills covering users, permissions, security, reports, and dashboards</li>
+      <li>Low-code app building with Flow, validation rules, and Lightning tools, with an introduction to platform development and integrations</li>
+      <li>Role-based preparation across administrator, app builder, developer, consultant, and architect pathways</li>
+    </ul>
+    <div class="vendor-focus-heading">Certification Badges</div>
+    <div class="vendor-cert-badge-row" aria-label="Salesforce certification badges and total">
+      <img src="assets/salesforce-platform-developer-badge.png" alt="Salesforce Certified Platform Developer badge" class="vendor-cert-badge" title="Salesforce Certified Platform Developer">
+      <img src="assets/salesforce-platform-admin-badge.png" alt="Salesforce Certified Platform Administrator badge" class="vendor-cert-badge" title="Salesforce Certified Platform Administrator">
+      <div class="certification-count"><span>Salesforce certification total<strong>136</strong></span></div>
+    </div>
+    <div class="outcome">
+      <div class="outcome-title">Salesforce Program Outcome</div>
+      <div class="small-note">Learners build practical skills to manage Salesforce environments, create business applications, and support customer-facing CRM workflows.</div>
+    </div>
+    <div class="vendor-pathway-strip">
+      <div class="vendor-pathway-strip-title">TRAINING &amp; PLACEMENT PATHWAY</div>
+      <div class="vendor-pathway-steps">
+        <div class="vendor-pathway-step"><span class="vendor-pathway-step-number">1</span><div class="vendor-pathway-step-title">CRM Foundations</div><div class="vendor-pathway-step-copy">Understand customer data, objects, and sales and service processes.</div></div>
+        <div class="vendor-pathway-step"><span class="vendor-pathway-step-number">2</span><div class="vendor-pathway-step-title">Guided Platform Labs</div><div class="vendor-pathway-step-copy">Practice administration, Flow automation, and app building.</div></div>
+        <div class="vendor-pathway-step"><span class="vendor-pathway-step-number">3</span><div class="vendor-pathway-step-title">Career Readiness</div><div class="vendor-pathway-step-copy">Prepare for certification and receive placement assistance.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 18</span></div>
+</section>
+
+<section class="page page-compact vendor-pathway-page" style="--vendor-accent:#2a8c75;">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">Juniper Training | Certification Pathway</div>
+  </div>
+  <div class="section">
+    <h2>19. Juniper Certification Pathway</h2>
+    <div class="partner-logos">
+      <img src="assets/th_logo.png" alt="Technical Hub" class="partner-logo3d" title="Technical Hub">
+      <img src="assets/Juniper%20Networks.svg" alt="Juniper Networks" class="partner-logo3d" title="Juniper Networks">
+    </div>
+    <p>Technical Hub provides focused Juniper networking training and placement assistance through practical configuration, troubleshooting, and certification preparation.</p>
+    <ul>
+      <li>Junos OS fundamentals, IP networking, and routing and switching configuration</li>
+      <li>Enterprise and service-provider network operations, fault isolation, and troubleshooting</li>
+      <li>Network security, cloud and data-center connectivity, and automation concepts</li>
+      <li>Certification preparation structured across Associate, Specialist, Professional, and Expert levels</li>
+    </ul>
+    <div class="vendor-focus-heading">Certification Badges</div>
+    <div class="vendor-cert-badge-row" aria-label="Juniper certification badges and total">
+      <img src="assets/juniper-jncia-junos-badge.png" alt="Juniper Networks Certified Associate, Junos badge" class="vendor-cert-badge" title="JNCIA-Junos">
+      <div class="certification-count"><span>Juniper certification total<strong>110</strong></span></div>
+    </div>
+    <div class="outcome">
+      <div class="outcome-title">Juniper Program Outcome</div>
+      <div class="small-note">Learners strengthen their ability to configure, operate, and troubleshoot Juniper-based networks across enterprise and service-provider environments.</div>
+    </div>
+    <div class="vendor-pathway-strip">
+      <div class="vendor-pathway-strip-title">TRAINING &amp; PLACEMENT PATHWAY</div>
+      <div class="vendor-pathway-steps">
+        <div class="vendor-pathway-step"><span class="vendor-pathway-step-number">1</span><div class="vendor-pathway-step-title">Network Foundations</div><div class="vendor-pathway-step-copy">Build core IP, routing, and switching knowledge.</div></div>
+        <div class="vendor-pathway-step"><span class="vendor-pathway-step-number">2</span><div class="vendor-pathway-step-title">Junos Practice</div><div class="vendor-pathway-step-copy">Configure devices and troubleshoot network scenarios.</div></div>
+        <div class="vendor-pathway-step"><span class="vendor-pathway-step-number">3</span><div class="vendor-pathway-step-title">Career Readiness</div><div class="vendor-pathway-step-copy">Prepare for certification and receive placement assistance.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 19</span></div>
+</section>
+
+<section class="page page-compact vendor-pathway-page" style="--vendor-accent:#4285f4;">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">Google Cloud Training | Certification Pathway</div>
+  </div>
+  <div class="section">
+    <h2>20. Google Cloud Certification Pathway</h2>
+    <div class="partner-logos">
+      <img src="assets/th_logo.png" alt="Technical Hub" class="partner-logo3d" title="Technical Hub">
+      <img src="assets/Google%20Cloud.svg" alt="Google Cloud" class="partner-logo3d" title="Google Cloud">
+    </div>
+    <p>Technical Hub provides Google Cloud training and placement assistance that helps learners develop practical cloud skills through guided study and applied deployment exercises.</p>
+    <ul>
+      <li>Cloud foundations, resource organization, identity and access management, and networking</li>
+      <li>Deploying and operating workloads with compute, storage, containers, and monitoring services</li>
+      <li>Cloud architecture, data and analytics, application development, and security concepts</li>
+      <li>Role-based preparation spanning foundational, associate, and professional certification pathways</li>
+    </ul>
+    <div class="vendor-focus-heading">Certification Badges</div>
+    <div class="vendor-cert-badge-row" aria-label="Google Cloud certification badges and total">
+      <img src="assets/google-cloud-associate-cloud-engineer-badge.png" alt="Google Cloud Associate Cloud Engineer certification badge" class="vendor-cert-badge" title="Associate Cloud Engineer">
+      <div class="certification-count"><span>Google Cloud certification total<strong>106</strong></span></div>
+    </div>
+    <div class="outcome">
+      <div class="outcome-title">Google Cloud Program Outcome</div>
+      <div class="small-note">Learners gain practical experience planning, deploying, and supporting cloud workloads, with skills aligned to common cloud roles.</div>
+    </div>
+    <div class="vendor-pathway-strip">
+      <div class="vendor-pathway-strip-title">TRAINING &amp; PLACEMENT PATHWAY</div>
+      <div class="vendor-pathway-steps">
+        <div class="vendor-pathway-step"><span class="vendor-pathway-step-number">1</span><div class="vendor-pathway-step-title">Cloud Foundations</div><div class="vendor-pathway-step-copy">Learn IAM, networking, and core cloud services.</div></div>
+        <div class="vendor-pathway-step"><span class="vendor-pathway-step-number">2</span><div class="vendor-pathway-step-title">Applied Cloud Labs</div><div class="vendor-pathway-step-copy">Deploy, monitor, and secure sample workloads.</div></div>
+        <div class="vendor-pathway-step"><span class="vendor-pathway-step-number">3</span><div class="vendor-pathway-step-title">Career Readiness</div><div class="vendor-pathway-step-copy">Prepare for certification and receive placement assistance.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 20</span></div>
+</section>
+
+<section class="page page-compact vendor-pathway-page" style="--vendor-accent:#e51b23;">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">AutoCAD Training | Certification Pathway</div>
+  </div>
+  <div class="section">
+    <h2>21. AutoCAD Certification Pathway</h2>
+    <div class="partner-logos">
+      <img src="assets/th_logo.png" alt="Technical Hub" class="partner-logo3d" title="Technical Hub">
+      <img src="assets/AutoCAD.svg" alt="AutoCAD" class="partner-logo3d" title="AutoCAD">
+    </div>
+    <p>Technical Hub provides AutoCAD training and placement assistance focused on accurate technical drawings, drafting workflows, and preparation for industry-recognized certification.</p>
+    <ul>
+      <li>Drawing setup, coordinate systems, units, layers, and object properties</li>
+      <li>Creating and editing geometry, reusable blocks, and referenced drawing content</li>
+      <li>Annotation, dimensions, layouts, plotting, and drawing output standards</li>
+      <li>Applied drafting exercises, drawing review, and certification-focused practice</li>
+    </ul>
+    <div class="vendor-focus-heading">Certification Badges</div>
+    <div class="vendor-cert-badge-row" aria-label="AutoCAD certification badges and total">
+      <img src="assets/autocad-certified-user-badge.png" alt="Autodesk AutoCAD Certified User badge" class="vendor-cert-badge" title="AutoCAD Certified User">
+      <div class="certification-count"><span>AutoCAD certification total<strong>67</strong></span></div>
+    </div>
+    <div class="outcome">
+      <div class="outcome-title">AutoCAD Program Outcome</div>
+      <div class="small-note">Learners produce clear, well-structured technical drawings and develop the drafting skills needed for design and documentation roles.</div>
+    </div>
+    <div class="vendor-pathway-strip">
+      <div class="vendor-pathway-strip-title">TRAINING &amp; PLACEMENT PATHWAY</div>
+      <div class="vendor-pathway-steps">
+        <div class="vendor-pathway-step"><span class="vendor-pathway-step-number">1</span><div class="vendor-pathway-step-title">Drafting Foundations</div><div class="vendor-pathway-step-copy">Work with coordinates, layers, and drawing geometry.</div></div>
+        <div class="vendor-pathway-step"><span class="vendor-pathway-step-number">2</span><div class="vendor-pathway-step-title">Design Projects</div><div class="vendor-pathway-step-copy">Apply annotation, layouts, and output standards.</div></div>
+        <div class="vendor-pathway-step"><span class="vendor-pathway-step-number">3</span><div class="vendor-pathway-step-title">Career Readiness</div><div class="vendor-pathway-step-copy">Prepare for certification and receive placement assistance.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 21</span></div>
+</section>
+
+<section class="page page-compact vendor-pathway-page" style="--vendor-accent:#8a1b61;">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">Cadence VLSI Training | Design Pathway</div>
+  </div>
+  <div class="section">
+    <h2>22. Cadence VLSI Design Training</h2>
+    <div class="partner-logos">
+      <img src="assets/th_logo.png" alt="Technical Hub" class="partner-logo3d" title="Technical Hub">
+      <img src="assets/Cadence%20Design%20Systems.svg" alt="Cadence Design Systems" class="partner-logo3d cadence-logo" title="Cadence Design Systems">
+    </div>
+    <p>Technical Hub provides VLSI training using Cadence electronic design automation (EDA) workflows, introducing students to semiconductor design, verification, and implementation.</p>
+    <ul>
+      <li>VLSI fundamentals, RTL concepts, design constraints, and semiconductor design stages</li>
+      <li>RTL synthesis with Cadence Genus and digital implementation with Innovus</li>
+      <li>Design verification, timing analysis, physical checks, and signoff concepts</li>
+      <li>Hands-on labs, project practice, and review using industry design workflows</li>
+      <li>Career preparation and placement assistance for VLSI design, verification, and implementation roles</li>
+    </ul>
+    <div class="vendor-focus-heading">Certification Badge</div>
+    <div class="vendor-cert-badge-row" aria-label="Cadence certification badge">
+      <img src="assets/Cadence%20Certified%20digital%20badge.png" alt="Cadence Certified digital badge" class="vendor-cert-badge" title="Cadence Certified">
+    </div>
+    <div class="outcome">
+      <div class="outcome-title">Cadence VLSI Training Outcome</div>
+      <div class="small-note">Students build practical knowledge of semiconductor design workflows, from RTL synthesis and implementation through verification and signoff.</div>
+    </div>
+    <img src="assets/GroupPhotos/vlsi.jpg" alt="VLSI student cohort completing Cadence Languages and Methodologies training" class="vendor-cadence-photo" title="VLSI student cohort">
+    <div class="vendor-pathway-strip">
+      <div class="vendor-pathway-strip-title">TRAINING &amp; PLACEMENT PATHWAY</div>
+      <div class="vendor-pathway-steps">
+        <div class="vendor-pathway-step"><span class="vendor-pathway-step-number">1</span><div class="vendor-pathway-step-title">VLSI Foundations</div><div class="vendor-pathway-step-copy">Study RTL concepts, design constraints, and chip design stages.</div></div>
+        <div class="vendor-pathway-step"><span class="vendor-pathway-step-number">2</span><div class="vendor-pathway-step-title">EDA Workflow Labs</div><div class="vendor-pathway-step-copy">Practice synthesis, implementation, and verification workflows.</div></div>
+        <div class="vendor-pathway-step"><span class="vendor-pathway-step-number">3</span><div class="vendor-pathway-step-title">Career Readiness</div><div class="vendor-pathway-step-copy">Review project work and receive placement assistance.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 22</span></div>
+</section>
+
+
+
+
+
+<section class="page knowledge-graph-page">
+  <div class="header">
+    <div class="header-left">TECHNICAL HUB | SRM UNIVERSITY</div>
+    <div class="header-right">Training, Credentials &amp; Outcomes</div>
+  </div>
+  <h2>23. Technical Hub Knowledge Graph</h2>
+  <p class="knowledge-graph-intro">A map of the partners, learning pathways, credentials, and student outcomes described in this proposal.</p>
+
+  <svg class="knowledge-graph-svg" viewBox="0 0 1000 1260" role="img" aria-labelledby="kg-title kg-desc">
+    <title id="kg-title">Technical Hub and SRM University knowledge graph</title>
+    <desc id="kg-desc">SRM University collaborates with Technical Hub. Technical Hub provides training, certification preparation, and placement support across six pathway groups connecting partner programs to credentials and learner outcomes.</desc>
+    <defs>
+      <marker id="kg-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="#8d9f91"></path>
+      </marker>
+    </defs>
+
+    <!-- Relationship edges sit behind the graph nodes. -->
+    <path class="kg-edge kg-edge-gold" d="M425 82 H575"></path>
+    <path class="kg-edge" d="M755 145 V163 H700 V177"></path>
+    <path class="kg-edge" d="M500 254 C410 268 255 270 255 306"></path>
+    <path class="kg-edge" d="M500 254 C590 268 745 270 745 306"></path>
+    <path class="kg-edge" d="M455 254 C365 350 255 430 255 571"></path>
+    <path class="kg-edge" d="M545 254 C635 350 745 430 745 571"></path>
+    <path class="kg-edge" d="M430 254 C350 455 255 595 255 836"></path>
+    <path class="kg-edge" d="M570 254 C650 455 745 595 745 836"></path>
+
+    <rect class="kg-org" x="45" y="35" width="380" height="95" rx="14"></rect>
+    <text class="kg-org-title" x="72" y="78">SRM UNIVERSITY</text>
+    <text class="kg-org-subtitle" x="72" y="105">Academic institution</text>
+
+    <rect class="kg-org-hub" x="575" y="35" width="380" height="110" rx="14"></rect>
+    <text class="kg-org-title kg-org-title-light" x="605" y="79">TECHNICAL HUB</text>
+    <text class="kg-org-subtitle kg-org-subtitle-light" x="605" y="108">Training &amp; certification partner</text>
+
+    <rect x="424" y="53" width="152" height="58" rx="15" fill="#fffdf8"></rect>
+    <text class="kg-relation" x="500" y="77" text-anchor="middle">ACADEMIC</text>
+    <text class="kg-relation" x="500" y="96" text-anchor="middle">PARTNERSHIP</text>
+
+    <rect class="kg-process" x="250" y="177" width="500" height="77" rx="15"></rect>
+    <text class="kg-process-title" x="500" y="205" text-anchor="middle">TECHNICAL HUB PATHWAYS</text>
+    <text class="kg-process-copy" x="500" y="232" text-anchor="middle">Training · Certification Preparation · Placement Support</text>
+
+    <g>
+      <rect class="kg-card" x="25" y="310" width="460" height="250" rx="15"></rect>
+      <rect class="kg-card-accent-green" x="25" y="310" width="7" height="250" rx="3"></rect>
+      <text class="kg-card-title" x="52" y="347">AI &amp; Software Engineering</text>
+      <text class="kg-card-label" x="52" y="378">PROGRAMS</text>
+      <text class="kg-card-partners" x="52" y="402">Claude · OpenAI · AI Ready Engineer</text>
+      <text class="kg-card-partners" x="52" y="424">GitHub Copilot</text>
+      <text class="kg-card-label" x="52" y="455">PATHWAYS &amp; CREDENTIALS</text>
+      <text class="kg-card-copy" x="52" y="480">Claude learning pathway · OpenAI APIs and agents</text>
+      <text class="kg-card-copy" x="52" y="503">GitHub Foundations · AI-assisted engineering</text>
+    </g>
+
+    <g>
+      <rect class="kg-card kg-card-alt" x="515" y="310" width="460" height="250" rx="15"></rect>
+      <rect class="kg-card-accent-gold" x="515" y="310" width="7" height="250" rx="3"></rect>
+      <text class="kg-card-title" x="542" y="347">Cloud &amp; Systems</text>
+      <text class="kg-card-label" x="542" y="378">PROGRAMS</text>
+      <text class="kg-card-partners" x="542" y="402">AWS · Microsoft / Azure · Google Cloud</text>
+      <text class="kg-card-partners" x="542" y="424">Red Hat</text>
+      <text class="kg-card-label" x="542" y="455">PATHWAYS &amp; CREDENTIALS</text>
+      <text class="kg-card-copy" x="542" y="480">Cloud Practitioner · Solutions Architect · Developer</text>
+      <text class="kg-card-copy" x="542" y="503">Azure Fundamentals · Azure Developer Associate</text>
+      <text class="kg-card-copy" x="542" y="526">Associate Cloud Engineer · RHCSA · MTA</text>
+    </g>
+
+    <g>
+      <rect class="kg-card kg-card-alt" x="25" y="575" width="460" height="250" rx="15"></rect>
+      <rect class="kg-card-accent-sage" x="25" y="575" width="7" height="250" rx="3"></rect>
+      <text class="kg-card-title" x="52" y="612">Enterprise Platforms &amp; Automation</text>
+      <text class="kg-card-label" x="52" y="643">PROGRAMS</text>
+      <text class="kg-card-partners" x="52" y="667">ServiceNow · Pega · Salesforce</text>
+      <text class="kg-card-partners" x="52" y="689">Power Platform · Automation Anywhere</text>
+      <text class="kg-card-label" x="52" y="720">PATHWAYS &amp; CREDENTIALS</text>
+      <text class="kg-card-copy" x="52" y="745">ServiceNow CSA / CAD · Pega CSA / CSSA</text>
+      <text class="kg-card-copy" x="52" y="768">Salesforce Administrator / Platform Developer</text>
+      <text class="kg-card-copy" x="52" y="791">PL-600 · PL-300 · Advanced RPA Professional</text>
+    </g>
+
+    <g>
+      <rect class="kg-card" x="515" y="575" width="460" height="250" rx="15"></rect>
+      <rect class="kg-card-accent-green" x="515" y="575" width="7" height="250" rx="3"></rect>
+      <text class="kg-card-title" x="542" y="612">Data &amp; Analytics</text>
+      <text class="kg-card-label" x="542" y="643">PROGRAMS</text>
+      <text class="kg-card-partners" x="542" y="667">MongoDB · Snowflake · Splunk · Oracle Academy</text>
+      <text class="kg-card-label" x="542" y="704">PATHWAYS &amp; CREDENTIALS</text>
+      <text class="kg-card-copy" x="542" y="729">MongoDB Associate Developer</text>
+      <text class="kg-card-copy" x="542" y="752">SnowPro Associate: Platform · Splunk Core Certified User</text>
+      <text class="kg-card-copy" x="542" y="775">Java Foundations Certified Associate</text>
+    </g>
+
+    <g>
+      <rect class="kg-card" x="25" y="840" width="460" height="250" rx="15"></rect>
+      <rect class="kg-card-accent-gold" x="25" y="840" width="7" height="250" rx="3"></rect>
+      <text class="kg-card-title" x="52" y="877">Networking &amp; Cybersecurity</text>
+      <text class="kg-card-label" x="52" y="908">PROGRAMS</text>
+      <text class="kg-card-partners" x="52" y="932">Cisco · Juniper Networks · Mile2</text>
+      <text class="kg-card-label" x="52" y="969">PATHWAYS &amp; CREDENTIALS</text>
+      <text class="kg-card-copy" x="52" y="994">CCNA · CyberOps · CCST Networking / Cybersecurity</text>
+      <text class="kg-card-copy" x="52" y="1017">JNCIA-Junos · CompTIA Security+ · C)PEH / C)IHE</text>
+    </g>
+
+    <g>
+      <rect class="kg-card kg-card-alt" x="515" y="840" width="460" height="250" rx="15"></rect>
+      <rect class="kg-card-accent-sage" x="515" y="840" width="7" height="250" rx="3"></rect>
+      <text class="kg-card-title" x="542" y="877">Engineering &amp; Design</text>
+      <text class="kg-card-label" x="542" y="908">PROGRAMS</text>
+      <text class="kg-card-partners" x="542" y="932">AutoCAD · Cadence Design Systems</text>
+      <text class="kg-card-label" x="542" y="969">PATHWAYS &amp; CREDENTIALS</text>
+      <text class="kg-card-copy" x="542" y="994">AutoCAD Certified User · Cadence Certified digital badge</text>
+      <text class="kg-card-copy" x="542" y="1017">VLSI: RTL synthesis · implementation · verification</text>
+    </g>
+
+    <path class="kg-edge kg-edge-gold" d="M230 1170 H266"></path>
+    <path class="kg-edge kg-edge-gold" d="M480 1170 H516"></path>
+    <path class="kg-edge kg-edge-gold" d="M730 1170 H766"></path>
+    <rect class="kg-outcome-node" x="20" y="1135" width="210" height="70" rx="14"></rect>
+    <text class="kg-outcome" x="125" y="1177" text-anchor="middle">Students &amp; Faculty</text>
+    <rect class="kg-outcome-node" x="270" y="1135" width="210" height="70" rx="14"></rect>
+    <text class="kg-outcome" x="375" y="1170" text-anchor="middle">Applied Skills</text>
+    <text class="kg-outcome" x="375" y="1191" text-anchor="middle">&amp; Projects</text>
+    <rect class="kg-outcome-node" x="520" y="1135" width="210" height="70" rx="14"></rect>
+    <text class="kg-outcome" x="625" y="1170" text-anchor="middle">Certification</text>
+    <text class="kg-outcome" x="625" y="1191" text-anchor="middle">Readiness</text>
+    <rect class="kg-outcome-node-final" x="770" y="1135" width="210" height="70" rx="14"></rect>
+    <text class="kg-outcome kg-outcome-final" x="875" y="1170" text-anchor="middle">Career &amp; Placement</text>
+    <text class="kg-outcome kg-outcome-final" x="875" y="1191" text-anchor="middle">Support</text>
+  </svg>
+
+  <div class="footer"><span>SRM AI &amp; Enterprise CoE Initiative</span><span>Page 23</span></div>
+</section>
+
+</body>
+</html>
+
