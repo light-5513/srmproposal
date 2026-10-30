@@ -4,7 +4,7 @@ from html import escape
 from collections import Counter
 from PIL import Image, ImageChops
 import re, json, xml.etree.ElementTree as ET
-from document_tools import load
+from document_tools import load, Node
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / '.layout-work/proposal-before-layout.html'
@@ -53,6 +53,25 @@ for page_no, page in enumerate(pages,1):
             p = p.parent
         owner = owner or photo_only.get(page_no) or nums[-1]
         photos[owner].append(image)
+
+pega_photo_4 = {'src':'assets/GroupPhotos/pega%204.jpeg','alt':'Pega student cohort 4 at a certification ceremony','title':'Pega certification ceremony cohort 4'}
+photos[7].append(Node('img',pega_photo_4))
+google_cloud_photo = {'src':'assets/GroupPhotos/google%20cloud-no-count.png','alt':'Google Cloud course completion student cohort','title':'Google Cloud student cohort'}
+photos[20].append(Node('img',google_cloud_photo))
+salesforce_photos = [
+    {'src':'assets/GroupPhotos/SALESFORCE.jpeg','alt':'Salesforce student group photo','title':'Salesforce student cohort'},
+    {'src':'assets/GroupPhotos/SALESFORCE1.jpeg','alt':'Salesforce student group photo, second pose','title':'Salesforce student cohort, second pose'}
+]
+photos[18].extend(Node('img',photo) for photo in salesforce_photos)
+aws_photo_2 = {'src':'assets/GroupPhotos/AWS%202.jpg','alt':'Technical Hub student gathering on National Technology Day','title':'Technical Hub National Technology Day gathering'}
+photos[15].append(Node('img',aws_photo_2))
+excel_photos = [
+    {'src':'assets/GroupPhotos/EXCEL%201-clean.png','alt':'Technical Hub eligibility test classroom, Excel photo 1','title':'Technical Hub eligibility test classroom'},
+    {'src':'assets/GroupPhotos/EXCEL%202.jpg','alt':'Technical Hub eligibility test classroom, Excel photo 2','title':'Technical Hub classroom assessment'},
+    {'src':'assets/GroupPhotos/EXCEL%203.jpg','alt':'Technical Hub Hoppers ceremony student gathering, Excel photo 3','title':'Technical Hub Hoppers ceremony'},
+    {'src':'assets/GroupPhotos/EXCEL%205.jpg','alt':'Technical Hub student gathering and speakers, Excel photo 5','title':'Technical Hub student gathering'}
+]
+photos[17].extend(Node('img',photo) for photo in excel_photos)
 
 asset_cache = {}
 def bounds(src):
@@ -112,7 +131,7 @@ def counts(section):
         values.append(('43','Mile2 certification total'))
     if heading(section)[0] == 22:
         values.append(('57','Students completed Cadence certifications'))
-    return values
+    return [(value, clean_text(re.sub(r'\btotal\b', '', label, flags=re.I))) for value,label in values]
 
 def metric_markup(values):
     if not values: return ''
@@ -120,14 +139,14 @@ def metric_markup(values):
 
 def gallery_markup(images):
     if not images: return ''
-    names={1:'one',2:'two',4:'four'}
+    names={1:'one',2:'two',3:'three',4:'four',5:'five'}
     out=f'<div class="cohort-gallery cohort-gallery--{names[len(images)]}" aria-label="Student group photos">'
     for image in images:
         attrs={k:image.attrs[k] for k in ('src','alt','title') if k in image.attrs}
         out+='<figure class="cohort-photo"><img class="cohort-image" '+ ' '.join(f'{k}="{escape(v,quote=True)}"' for k,v in attrs.items())+'></figure>'
     return out+'</div>'
 
-def program(num):
+def program(num, page_number=None, embedded=False):
     n=sections[num]
     h=n.all('h2')[0]
     logo_block=n.all('div','partner-logos')[0]
@@ -135,14 +154,22 @@ def program(num):
     badges=[i for i in n.all('img') if i not in logos and 'GroupPhotos/' not in i.attrs.get('src','')]
     totals=counts(n)
     pp=photos[num]
+    if num==7: pp=[pp[0],pp[2]]
+    if num==17: pp=pp[:2]
     pathway=n.all('div','vendor-pathway-strip')
     mode='program--photos' if pp else 'program--text-only'
     mode+= ' program--pathway' if pathway else ''
     mode+= ' program--gallery4' if len(pp)==4 else ''
+    mode+= ' program--gallery5' if len(pp)==5 else ''
     mode+= ' program--openai' if num==4 else ''
     mode+= ' program--microsoft' if num==17 else ''
+    mode+= ' program--pega' if num==7 else ''
+    mode+= ' program--salesforce' if num==18 else ''
     mode+= ' program--no-credentials' if not badges and not totals else ''
-    out=f'<section class="page program-page {mode}" data-program="{num}">'+header('Industry-certified learning pathways')+'<div class="program-content">'+title(h)
+    classes=f'program-page program-block {mode}' if embedded else f'page program-page {mode}'
+    out=f'<section class="{classes}" data-program="{num}">'
+    if not embedded: out+=header('Industry-certified learning pathways')
+    out+='<div class="program-content">'+title(h)
     out+='<div class="brand-row">'+''.join('<div class="brand-cell">'+asset(i)+'</div>' for i in logos)+'</div>'
     out+='<div class="learning-content">'
     for c in n.children:
@@ -170,7 +197,19 @@ def program(num):
         out+='<div class="outcome"><div class="outcome-title">'+inner(oc.all('div','outcome-title')[0])+'</div><p class="outcome-copy">'+inner(oc.all('div','small-note')[0])+'</p></div>'
     if pathway: out+=pathway[0].raw(source)
     out+=gallery_markup(pp)
-    out+='</div>'+footer(num)+'</section>'
+    out+='</div>'
+    if not embedded: out+=footer(page_number or num)
+    out+='</section>'
+    return out
+
+def pega_continuation():
+    selected=[photos[7][1],photos[7][3],photos[7][4]]
+    return '<section class="page program-continuation-page pega-photo-page" data-program-continuation="7" aria-label="Pega University Program group photos, continued">'+header('Pega University Program | Student cohorts')+'<div class="program-content">'+gallery_markup(selected)+'</div>'+footer(7)+'</section>'
+
+def microsoft_continuations():
+    out=''
+    for page_number,mode,selected in [(18,'microsoft-excel-classroom',photos[17][2:4]),(19,'microsoft-excel-cohorts',photos[17][4:6])]:
+        out+='<section class="page program-continuation-page microsoft-excel-page '+mode+'" data-program-continuation="17" aria-label="Microsoft Certification Programs Excel photos, continued">'+header('Microsoft Certification Programs | Excel photos')+'<div class="program-content">'+gallery_markup(selected)+'</div>'+footer(page_number)+'</section>'
     return out
 
 cover=pages[0]
@@ -188,19 +227,29 @@ body+='<div class="overview-summary">'+title(sections[1].all('h2')[0])+''.join(c
 obj=sections[2].all('ul')[0]
 body+='<div class="overview-objectives">'+title(sections[2].all('h2')[0])+'<ul class="objective-grid">'+inner(obj)+'</ul></div>'
 body+='</div>'+footer(2)+'</section>'
-body+='\n'.join(program(n) for n in range(3,23))
+body+='<section class="page combined-program-page">'+header('Industry-certified learning pathways')+'<div class="program-stack">'+program(3,embedded=True)+program(4,embedded=True)+'</div>'+footer(3)+'</section>'
+for num in range(5,23):
+    body+=program(num,page_number=(num-1 if num<=7 else num)+(2 if num>=18 else 0))
+    if num==7: body+=pega_continuation()
+    if num==17: body+=microsoft_continuations()
 css=(ROOT/'.layout-work/proposal.css').read_text(encoding='utf-8')
 html='<!DOCTYPE html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SRM AI &amp; Enterprise Centers of Excellence — Technical Hub &amp; SRM University</title>\n<style>\n'+css+'\n</style></head><body>\n'+body+'\n</body></html>\n'
 TARGET.write_text(html,encoding='utf-8')
 
 old=Counter(i.attrs['src'] for i in doc.root.all('img'))
+old[pega_photo_4['src']]+=1
+old[google_cloud_photo['src']]+=1
+old.update(photo['src'] for photo in salesforce_photos)
+old[aws_photo_2['src']]+=1
+old.update(photo['src'] for photo in excel_photos)
 _,rebuilt=load(TARGET)
 new=Counter(i.attrs['src'] for i in rebuilt.root.all('img'))
 new.update(i.attrs['data-asset-src'] for i in rebuilt.root.all('svg') if 'data-asset-src' in i.attrs)
 assert old==new,(old-new,new-old)
-manifest={'programs':[], 'image_count':sum(old.values()),'photo_count':sum(len(v) for v in photos.values())}
+manifest={'programs':[], 'image_count':sum(old.values()),'photo_count':sum(len(v) for v in photos.values()),'page_count':24}
 for num in range(3,23):
     n=sections[num]
-    manifest['programs'].append({'number':num,'heading':n.all('h2')[0].text().strip(),'photos':[i.attrs['src'] for i in photos[num]],'counts':counts(n)})
+    page_number=3 if num in (3,4) else (num-1 if num<=7 else num)+(2 if num>=18 else 0)
+    manifest['programs'].append({'number':num,'page_number':page_number,'page_numbers':[6,7] if num==7 else [17,18,19] if num==17 else [page_number],'heading':n.all('h2')[0].text().strip(),'photos':[i.attrs['src'] for i in photos[num]],'counts':counts(n)})
 (ROOT/'.layout-work/manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
 print(json.dumps({'pages':len(rebuilt.root.all('section','page')),'programs':20,'images_preserved':sum(old.values()),'photos':manifest['photo_count']},indent=2))

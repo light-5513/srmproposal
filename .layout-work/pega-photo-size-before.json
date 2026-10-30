@@ -1,0 +1,57 @@
+[
+  {
+    "tag": "IMG",
+    "class": "cohort-image",
+    "src": "assets/GroupPhotos/pega%20csa.jpg",
+    "x": 247.109375,
+    "y": 6335,
+    "width": 264,
+    "height": 148.5,
+    "bottom": 6483.5,
+    "right": 511.109375
+  },
+  {
+    "tag": "IMG",
+    "class": "cohort-image",
+    "src": "assets/GroupPhotos/pega%20cssa.jpg",
+    "x": 566.65625,
+    "y": 6338.4375,
+    "width": 318.453125,
+    "height": 318.453125,
+    "bottom": 6656.890625,
+    "right": 885.109375
+  },
+  {
+    "tag": "IMG",
+    "class": "cohort-image",
+    "src": "assets/GroupPhotos/pega%202.jpeg",
+    "x": 247.109375,
+    "y": 6511.8125,
+    "width": 264.015625,
+    "height": 148.5,
+    "bottom": 6660.3125,
+    "right": 511.125
+  },
+  {
+    "tag": "IMG",
+    "class": "cohort-image",
+    "src": "assets/GroupPhotos/pega%203.jpeg",
+    "x": 219.890625,
+    "y": 6705.578125,
+    "width": 318.453125,
+    "height": 114.640625,
+    "bottom": 6820.21875,
+    "right": 538.34375
+  },
+  {
+    "tag": "IMG",
+    "class": "cohort-image",
+    "src": "assets/GroupPhotos/pega%204.jpeg",
+    "x": 566.65625,
+    "y": 6705.578125,
+    "width": 318.453125,
+    "height": 114.640625,
+    "bottom": 6820.21875,
+    "right": 885.109375
+  }
+]

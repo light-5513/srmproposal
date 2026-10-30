@@ -4,13 +4,21 @@
       "number": 3,
       "heading": "3. Claude Centre of Excellence",
       "photos": [],
-      "counts": []
+      "counts": [],
+      "page_number": 3,
+      "page_numbers": [
+        3
+      ]
     },
     {
       "number": 4,
       "heading": "4. OpenAI Centre of Excellence",
       "photos": [],
-      "counts": []
+      "counts": [],
+      "page_number": 3,
+      "page_numbers": [
+        3
+      ]
     },
     {
       "number": 5,
@@ -22,8 +30,12 @@
       "counts": [
         [
           "179",
-          "GitHub certification total"
+          "GitHub certification"
         ]
+      ],
+      "page_number": 4,
+      "page_numbers": [
+        4
       ]
     },
     {
@@ -36,8 +48,12 @@
       "counts": [
         [
           "359",
-          "ServiceNow certification total"
+          "ServiceNow certification"
         ]
+      ],
+      "page_number": 5,
+      "page_numbers": [
+        5
       ]
     },
     {
@@ -47,13 +63,19 @@
         "assets/GroupPhotos/pega%20csa.jpg",
         "assets/GroupPhotos/pega%20cssa.jpg",
         "assets/GroupPhotos/pega%202.jpeg",
-        "assets/GroupPhotos/pega%203.jpeg"
+        "assets/GroupPhotos/pega%203.jpeg",
+        "assets/GroupPhotos/pega%204.jpeg"
       ],
       "counts": [
         [
           "462",
-          "Pega certification total"
+          "Pega certification"
         ]
+      ],
+      "page_number": 6,
+      "page_numbers": [
+        6,
+        7
       ]
     },
     {
@@ -65,8 +87,12 @@
       "counts": [
         [
           "544",
-          "Red Hat certification total"
+          "Red Hat certification"
         ]
+      ],
+      "page_number": 8,
+      "page_numbers": [
+        8
       ]
     },
     {
@@ -78,8 +104,12 @@
       "counts": [
         [
           "188",
-          "MongoDB certification total"
+          "MongoDB certification"
         ]
+      ],
+      "page_number": 9,
+      "page_numbers": [
+        9
       ]
     },
     {
@@ -93,6 +123,10 @@
           "247",
           "Automation Anywhere certifications"
         ]
+      ],
+      "page_number": 10,
+      "page_numbers": [
+        10
       ]
     },
     {
@@ -102,8 +136,12 @@
       "counts": [
         [
           "123",
-          "Cisco certification total"
+          "Cisco certification"
         ]
+      ],
+      "page_number": 11,
+      "page_numbers": [
+        11
       ]
     },
     {
@@ -115,15 +153,23 @@
       "counts": [
         [
           "912",
-          "Oracle certification total"
+          "Oracle certification"
         ]
+      ],
+      "page_number": 12,
+      "page_numbers": [
+        12
       ]
     },
     {
       "number": 13,
       "heading": "13. Splunk Partnership",
       "photos": [],
-      "counts": []
+      "counts": [],
+      "page_number": 13,
+      "page_numbers": [
+        13
+      ]
     },
     {
       "number": 14,
@@ -138,21 +184,30 @@
         ],
         [
           "43",
-          "Mile2 certification total"
+          "Mile2 certification"
         ]
+      ],
+      "page_number": 14,
+      "page_numbers": [
+        14
       ]
     },
     {
       "number": 15,
       "heading": "15. AWS Academy",
       "photos": [
-        "assets/GroupPhotos/aws.jpg"
+        "assets/GroupPhotos/aws.jpg",
+        "assets/GroupPhotos/AWS%202.jpg"
       ],
       "counts": [
         [
           "1,473",
-          "AWS certification total"
+          "AWS certification"
         ]
+      ],
+      "page_number": 15,
+      "page_numbers": [
+        15
       ]
     },
     {
@@ -164,8 +219,12 @@
       "counts": [
         [
           "134",
-          "SnowPro certification total"
+          "SnowPro certification"
         ]
+      ],
+      "page_number": 16,
+      "page_numbers": [
+        16
       ]
     },
     {
@@ -173,24 +232,41 @@
       "heading": "17. Microsoft Certification Programs",
       "photos": [
         "assets/GroupPhotos/powerplatform.jpg",
-        "assets/GroupPhotos/powerplatform2.jpg"
+        "assets/GroupPhotos/powerplatform2.jpg",
+        "assets/GroupPhotos/EXCEL%201-clean.png",
+        "assets/GroupPhotos/EXCEL%202.jpg",
+        "assets/GroupPhotos/EXCEL%203.jpg",
+        "assets/GroupPhotos/EXCEL%205.jpg"
       ],
       "counts": [
         [
           "4,651",
-          "Total Microsoft certificates"
+          "Microsoft certificates"
         ]
+      ],
+      "page_number": 17,
+      "page_numbers": [
+        17,
+        18,
+        19
       ]
     },
     {
       "number": 18,
       "heading": "18. Salesforce Certification Pathway",
-      "photos": [],
+      "photos": [
+        "assets/GroupPhotos/SALESFORCE.jpeg",
+        "assets/GroupPhotos/SALESFORCE1.jpeg"
+      ],
       "counts": [
         [
           "136",
-          "Salesforce certification total"
+          "Salesforce certification"
         ]
+      ],
+      "page_number": 20,
+      "page_numbers": [
+        20
       ]
     },
     {
@@ -200,19 +276,29 @@
       "counts": [
         [
           "110",
-          "Juniper certification total"
+          "Juniper certification"
         ]
+      ],
+      "page_number": 21,
+      "page_numbers": [
+        21
       ]
     },
     {
       "number": 20,
       "heading": "20. Google Cloud Certification Pathway",
-      "photos": [],
+      "photos": [
+        "assets/GroupPhotos/google%20cloud-no-count.png"
+      ],
       "counts": [
         [
           "106",
-          "Google Cloud certification total"
+          "Google Cloud certification"
         ]
+      ],
+      "page_number": 22,
+      "page_numbers": [
+        22
       ]
     },
     {
@@ -222,8 +308,12 @@
       "counts": [
         [
           "67",
-          "AutoCAD certification total"
+          "AutoCAD certification"
         ]
+      ],
+      "page_number": 23,
+      "page_numbers": [
+        23
       ]
     },
     {
@@ -237,9 +327,14 @@
           "57",
           "Students completed Cadence certifications"
         ]
+      ],
+      "page_number": 24,
+      "page_numbers": [
+        24
       ]
     }
   ],
-  "image_count": 88,
-  "photo_count": 18
+  "image_count": 97,
+  "photo_count": 27,
+  "page_count": 24
 }

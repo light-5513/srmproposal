@@ -1,0 +1,6 @@
+Mode: built-in image_gen edit
+Source: assets/GroupPhotos/EXCEL 1-no-heading.png
+Saved asset: assets/GroupPhotos/EXCEL 1-clean.png
+
+Final prompt:
+Use case: precise-object-edit. Edit target: the supplied Excel classroom photo whose center heading has already been removed. Remove only the Technical Hub and Aditya University logos, their text, and the short vertical green divider in the upper-right corner. Seamlessly fill that small area with the matching white ceiling/background. Keep the already-blank upper-center area blank. Preserve the faint test icon at upper left, all students and faces, furniture, classroom details, colors, and the bottom green footer/contact text. Keep the entire original frame and its 16:9 aspect ratio; no cropping, no new text, no other edits.

@@ -1,0 +1,6 @@
+Mode: built-in image_gen edit
+Source: assets/GroupPhotos/EXCEL 1.jpg
+Saved asset: assets/GroupPhotos/EXCEL 1-no-heading.png
+
+Final prompt:
+Use case: precise-object-edit. Edit target: the supplied first Excel classroom photo. Remove only the entire centered "IGNITE Coder-II" branding/logo and the green "Eligibility Test" heading in the upper-center white ceiling area. Fill these two areas seamlessly with the matching white ceiling/background. Preserve the faint test icon at upper left, Technical Hub and Aditya University logos at upper right, all students, faces, furniture, classroom details, colors, and the bottom green footer/contact text unchanged. Keep the full original frame and 16:9 aspect ratio; no cropping, no new text, no other edits.

@@ -1,0 +1,6 @@
+Mode: built-in image_gen edit
+Source: assets/GroupPhotos/google cloud.jpg
+Saved asset: assets/GroupPhotos/google cloud-no-count.png
+
+Final prompt:
+Use case: precise-object-edit. Edit target: the supplied Google Cloud group photo. Remove only the printed "230+" count at the top center and fill that area with the matching sky texture. Keep "TRAINEES" and all other text, logos, people, faces, certificates, colors, framing, and image dimensions unchanged. No cropping, no new text. Preserve the original photograph.

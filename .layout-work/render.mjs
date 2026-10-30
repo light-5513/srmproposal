@@ -48,8 +48,8 @@ try{
   const metrics=await evaluate(`(()=>{
     const box=e=>{const r=e.getBoundingClientRect();return {x:r.x+scrollX,y:r.y+scrollY,width:r.width,height:r.height,bottom:r.bottom+scrollY,right:r.right+scrollX};};
     return {textOverflow:[...document.querySelectorAll('.learning-list li,.program-intro,.credential-notes')].filter(e=>e.scrollHeight>e.clientHeight+2||e.scrollWidth>e.clientWidth+2).map(e=>({class:e.className,text:e.textContent.trim(),scrollHeight:e.scrollHeight,clientHeight:e.clientHeight})),images:[...document.images].map(i=>({src:i.getAttribute('src'),complete:i.complete,ok:!!i.naturalWidth})),pages:[...document.querySelectorAll('section.page')].map((p,i)=>{
-      const b=box(p),f=p.querySelector('.footer,.page-footer'),fb=f?box(f):null,c=p.querySelector('.program-content');
-      const items=[...p.querySelectorAll('img,.brand-mark,.badge-mark,.outcome,.cohort-gallery,.vendor-pathway-strip')].map(e=>({tag:e.tagName,class:e.className.baseVal??e.className,src:e.getAttribute('src')||e.getAttribute('aria-label'),...box(e)}));
+      const b=box(p),f=p.querySelector('.footer,.page-footer'),fb=f?box(f):null,c=p.querySelector('.program-stack,.program-content');
+      const items=[...p.querySelectorAll('img,.brand-mark,.badge-mark,.outcome,.cohort-gallery,.vendor-pathway-strip,.program-block,.learning-content')].map(e=>({tag:e.tagName,class:e.className.baseVal??e.className,src:e.getAttribute('src')||e.getAttribute('aria-label'),...box(e)}));
       const parts=c?[...c.children].map(e=>({class:e.className.baseVal??e.className,...box(e)})):[];
       return {number:i+1,heading:p.querySelector('h2,h1')?.textContent.trim(),...b,scrollHeight:p.scrollHeight,clientHeight:p.clientHeight,footer:fb,content:c?box(c):null,parts,items};
     })};

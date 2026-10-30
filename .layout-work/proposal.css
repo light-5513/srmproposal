@@ -8,7 +8,7 @@
   --ink: #1c2c24;
   --muted: #607168;
   --line: #dce5dc;
-  --field: #f1f6ef;
+  --field: #fafcf9;
   --paper: #fff;
 }
 * { box-sizing: border-box; }
@@ -116,28 +116,46 @@ h2 {
 .learning-list { margin: 0; padding-left: 4.3mm; display: grid; gap: 1.1mm; font-size: 9.5pt; line-height: 1.42; }
 .learning-list li { padding-left: .8mm; break-inside: avoid; page-break-inside: avoid; }
 .learning-list li::marker { color: var(--green); }
-.program--text-only .learning-content { flex: 1; }
+.program--text-only .learning-content { flex: 0 0 auto; }
 .program--text-only .learning-list {
-  flex: 1;
+  flex: 0 0 auto;
   padding: 0;
   display: grid;
   grid-template-columns: minmax(0,1fr);
-  grid-auto-rows: 1fr;
-  gap: 3mm;
+  grid-auto-rows: auto;
+  align-content: start;
+  gap: 2mm;
   list-style: none;
-  font-size: 10.5pt;
-  line-height: 1.5;
+  font-size: 9.5pt;
+  line-height: 1.4;
 }
 .program--text-only .learning-list li {
-  padding: 4mm 5mm;
-  border-left: .8mm solid #cbdcc9;
-  background: #f4f7f2;
+  padding: 1.5mm 3mm;
+  border-left: .5mm solid #dce6da;
+  background: var(--field);
   border-radius: 0 2mm 2mm 0;
   display: flex;
   align-items: center;
 }
-.program--no-credentials .program-intro { font-size: 10.8pt; line-height: 1.55; }
-.program--no-credentials .learning-list { font-size: 11.3pt; line-height: 1.5; }
+.program--no-credentials .program-intro { font-size: 10pt; line-height: 1.45; }
+.program--no-credentials .learning-list { font-size: 10pt; line-height: 1.4; }
+.program-stack { display: grid; grid-template-rows: repeat(2,minmax(0,1fr)); gap: 4mm; flex: 1; min-height: 0; }
+.program-block { min-height: 0; break-inside: avoid; page-break-inside: avoid; }
+.program-block + .program-block { padding-top: 3mm; border-top: .3mm solid var(--line); }
+.program-block .program-content { height: 100%; gap: 2.5mm; }
+.program-block h2 { font-size: 14.5pt; }
+.program-block .section-number { width: 8mm; height: 8mm; flex-basis: 8mm; font-size: 10.5pt; }
+.program-block .brand-row { height: 38mm; }
+.program-block .brand-cell { padding: 1mm 4mm; }
+.program-block .brand-cell:first-child .brand-mark { max-height: 17mm; max-width: 66mm; }
+.program-block .brand-cell:last-child .brand-mark { max-height: 36mm; }
+.program-block .learning-content { gap: 1.5mm; }
+.program-block .program-intro { font-size: 9.4pt; line-height: 1.4; }
+.program-block .learning-list { font-size: 9.4pt; line-height: 1.35; gap: 1.5mm; }
+.program-block .learning-list li { padding: 1.2mm 3mm; }
+.program-block .outcome { padding: 1.6mm 3mm; }
+.program-block .outcome-title { font-size: 8pt; margin-bottom: .6mm; }
+.program-block .outcome-copy { font-size: 8.5pt; line-height: 1.35; }
 .credential-strip { display: flex; align-items: center; justify-content: center; gap: 4.5mm; flex: 0 0 auto; min-height: 35mm; }
 .badge-row { display: flex; align-items: center; justify-content: center; gap: 4mm; min-width: 0; }
 .badge-mark { display: block; width: 34mm; height: 35mm; overflow: hidden; }
@@ -151,7 +169,7 @@ h2 {
   min-height: 32mm;
   padding: 3mm 2.5mm;
   border-radius: 2.5mm;
-  background: #f0f5ed;
+  background: var(--field);
   border-top: 1mm solid var(--gold);
   display: flex;
   flex-direction: column;
@@ -166,7 +184,7 @@ h2 {
 .credential-strip--five .metric span { max-width: 40mm; text-align: left; font-size: 8pt; }
 .credential-notes { color: var(--muted); font-size: 7.8pt; line-height: 1.4; text-align: center; }
 .credential-notes p + p { margin-top: .8mm; }
-.outcome { flex: 0 0 auto; background: var(--field); border-left: 1mm solid var(--green); border-radius: 0 2.5mm 2.5mm 0; padding: 3.5mm 4mm; break-inside: avoid; }
+.outcome { flex: 0 0 auto; background: var(--field); border-left: .7mm solid var(--green); border-radius: 0 2.5mm 2.5mm 0; padding: 1.8mm 3mm; break-inside: avoid; }
 .outcome-title { font-size: 8pt; font-weight: 800; color: var(--forest); margin-bottom: 1mm; }
 .outcome-copy { font-size: 9pt; line-height: 1.45; color: #40574a; }
 .cohort-gallery { display: grid; flex: 1; min-height: 40mm; gap: 3.5mm; grid-template-columns: minmax(0,1fr); grid-template-rows: minmax(0,1fr); align-items: stretch; }
@@ -183,8 +201,20 @@ h2 {
 }
 .cohort-gallery--one .cohort-image { max-width: 94%; max-height: 103mm; }
 .cohort-gallery--two { grid-template-rows: repeat(2,minmax(0,1fr)); }
+.program--salesforce .cohort-gallery--two { grid-template-columns: repeat(2,minmax(0,1fr)); grid-template-rows: minmax(0,1fr); gap: 4mm; }
+.cohort-gallery--three { grid-template-rows: repeat(3,minmax(0,1fr)); }
+.program--pega .cohort-gallery { gap: 4mm; }
+.pega-photo-page .cohort-gallery { grid-template-rows: 1.75fr 1fr 1fr; gap: 4mm; }
+.pega-photo-page .cohort-image { max-width: 94%; }
+.microsoft-excel-page .cohort-gallery { gap: 5mm; }
+.microsoft-excel-page .cohort-image { max-width: 94%; }
+.microsoft-excel-classroom .cohort-gallery { grid-template-rows: .5625fr 1fr; gap: 4mm; }
+.microsoft-excel-cohorts .cohort-gallery { grid-template-rows: max-content max-content; align-content: start; gap: 4mm; }
+.microsoft-excel-cohorts .cohort-image { width: 94%; height: auto; max-height: none; }
 .cohort-gallery--four { grid-template-columns: repeat(2,minmax(0,1fr)); grid-template-rows: repeat(2,minmax(0,1fr)); }
-.cohort-gallery--four .cohort-photo { background: #f5f8f3; border-radius: 3mm; padding: 2mm; }
+.cohort-gallery--five { grid-template-columns: repeat(2,minmax(0,1fr)); grid-template-rows: repeat(3,minmax(0,1fr)); }
+.cohort-gallery--five .cohort-photo:nth-child(2) { grid-column: 2; grid-row: 1 / span 2; }
+.cohort-gallery--four .cohort-photo, .cohort-gallery--five .cohort-photo { background: var(--field); border-radius: 3mm; padding: 2mm; }
 .program--photos .program-content { gap: 2.5mm; }
 .program--photos .brand-row { height: 25mm; }
 .program--photos .brand-cell:first-child .brand-mark { max-height: 18mm; }
@@ -195,12 +225,12 @@ h2 {
 .program--photos .credential-strip { min-height: 30mm; }
 .program--photos .badge-mark { height: 31mm; width: 31mm; }
 .program--photos .metric { min-height: 30mm; }
-.program--photos .outcome { padding: 2.4mm 3.5mm; }
+.program--photos .outcome { padding: 1.8mm 3mm; }
 .program--photos .outcome-copy { font-size: 8.3pt; line-height: 1.35; }
-.program--gallery4 .program-content { gap: 2.2mm; }
-.program--gallery4 .badge-mark { height: 28mm; width: 29mm; }
-.program--gallery4 .metric { min-height: 28mm; }
-.program--gallery4 .brand-row { height: 23mm; }
+.program--gallery4 .program-content, .program--gallery5 .program-content { gap: 2.2mm; }
+.program--gallery4 .badge-mark, .program--gallery5 .badge-mark { height: 28mm; width: 29mm; }
+.program--gallery4 .metric, .program--gallery5 .metric { min-height: 28mm; }
+.program--gallery4 .brand-row, .program--gallery5 .brand-row { height: 23mm; }
 .program--microsoft .credential-strip--five .badge-mark { height: 27mm; width: 29mm; }
 .program--microsoft .credential-strip--five { gap: 1.2mm; }
 .program--microsoft .credential-strip--five .metric { min-height: 12mm; padding: 1.5mm 3mm; }
@@ -209,7 +239,7 @@ h2 {
 .vendor-pathway-strip { flex: 0 0 auto; break-inside: avoid; }
 .vendor-pathway-strip-title { color: var(--forest); font-size: 8pt; font-weight: 800; margin-bottom: 2mm; }
 .vendor-pathway-steps { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 3mm; }
-.vendor-pathway-step { padding: 3mm; background: #f4f7f1; border-radius: 2mm; min-width: 0; }
+.vendor-pathway-step { padding: 2.5mm; background: var(--field); border-radius: 2mm; min-width: 0; }
 .vendor-pathway-step-number { display: inline-grid; place-items: center; width: 6mm; height: 6mm; background: var(--forest); color: white; border-radius: 1.5mm; font-size: 8pt; font-weight: 750; margin-bottom: 1.5mm; }
 .vendor-pathway-step-title { color: var(--forest); font-size: 8.6pt; font-weight: 750; margin-bottom: 1mm; }
 .vendor-pathway-step-copy { color: var(--muted); font-size: 8pt; line-height: 1.4; }
@@ -218,28 +248,31 @@ h2 {
 .program--pathway.program--photos .vendor-pathway-step { padding: 2mm 2.5mm; }
 .program--pathway.program--photos .vendor-pathway-step-copy { font-size: 7.5pt; line-height: 1.3; }
 .program--pathway.program--photos .cohort-gallery--one .cohort-image { max-height: 78mm; }
-.cover-page { padding: 17mm 17mm 13mm; gap: 0; }
+.cover-page { padding: 17mm 17mm 13mm; display: grid; grid-template-rows: 111.5mm 40mm auto auto minmax(0,1fr); gap: 0; } /* The logo row centers at 148.5 mm on the A4 sheet. */
 .cover-page::before { width: 11mm; height: 100%; left: auto; background: var(--forest); }
 .cover-page::after { left: auto; right: 11mm; width: 2mm; height: 100%; background: var(--gold); }
-.cover-brands { display: grid; grid-template-columns: 1fr 1fr; gap: 10mm; height: 34mm; width: 160mm; }
-.cover-brand { display: flex; align-items: center; justify-content: flex-start; height: 100%; }
-.cover-brand .brand-mark { width: 74mm; height: 30mm; }
-.cover-brand:last-child .brand-mark { max-width: 57mm; margin-left: auto; }
-.cover-title { margin-top: 26mm; max-width: 161mm; }
-h1 { color: var(--forest); font-size: 33pt; line-height: 1.1; font-weight: 750; letter-spacing: -.035em; }
+.cover-brands { grid-row: 2; justify-self: center; display: flex; align-items: center; justify-content: space-between; gap: 6mm; height: 40mm; width: 170mm; }
+.cover-brands::after { content: ""; order: 1; flex: 0 0 .5mm; height: 32mm; background: var(--gold); } /* taste-skill-ignore: user-requested divider between the cover logos. */
+.cover-brand { display: flex; align-items: center; justify-content: center; flex: 0 0 auto; height: 100%; }
+.cover-brand:last-child { order: 2; }
+.cover-brand .brand-mark { width: 88mm; height: 36mm; }
+.cover-brand:last-child .brand-mark { width: 68mm; max-width: 68mm; margin-left: 0; }
+.cover-title { grid-row: 1; align-self: start; margin-top: 26mm; max-width: 161mm; }
+h1 { color: var(--forest); font-size: 24pt; line-height: 1.1; font-weight: 750; letter-spacing: -.035em; white-space: nowrap; }
 .subtitle { margin-top: 6mm; color: #435b4d; font-size: 12.5pt; line-height: 1.55; }
 .collab { margin-top: 7mm; font-size: 11pt; line-height: 1.65; color: var(--muted); }
-.cover-vision { margin-top: 15mm; padding: 7mm 8mm; background: var(--forest); border-top: 1.5mm solid var(--gold); max-width: 160mm; border-radius: 0 0 3mm 3mm; }
+.cover-vision { grid-row: 3; margin-top: 15mm; padding: 7mm 8mm; background: var(--forest); border-top: 1.5mm solid var(--gold); max-width: 160mm; border-radius: 0 0 3mm 3mm; }
 .cover-vision .label { color: #f8d975; font-size: 10pt; font-weight: 700; margin-bottom: 3mm; }
 .vision-text { color: #fff; font-size: 12pt; line-height: 1.6; }
 .date { margin-top: 8mm; color: var(--forest); font-size: 10pt; font-weight: 600; }
-.cover-footer { margin-top: auto; width: 160mm; font-size: 7.5pt; line-height: 1.5; color: var(--muted); }
+.cover-page .date { grid-row: 4; }
+.cover-footer { grid-row: 5; align-self: end; margin-top: 0; width: 160mm; font-size: 7.5pt; line-height: 1.5; color: var(--muted); }
 .overview-content { flex: 1; display: flex; flex-direction: column; gap: 10mm; min-height: 0; }
 .overview-summary { display: flex; flex-direction: column; gap: 6mm; }
 .overview-summary p { font-size: 12.3pt; line-height: 1.75; color: #385242; }
 .overview-objectives { flex: 1; display: flex; flex-direction: column; gap: 6mm; min-height: 0; }
 .objective-grid { flex: 1; list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 5mm; }
-.objective-grid li { display: flex; align-items: center; padding: 8mm; background: #f2f6ef; border-top: 1.2mm solid var(--gold); border-radius: 0 3mm 3mm 3mm; font-size: 12pt; line-height: 1.6; color: var(--forest); }
+.objective-grid li { display: flex; align-items: center; padding: 8mm; background: var(--field); border-top: 1.2mm solid var(--gold); border-radius: 0 3mm 3mm 3mm; font-size: 12pt; line-height: 1.6; color: var(--forest); }
 .knowledge-graph-page .program-content { gap: 3mm; }
 .knowledge-graph-intro { font-size: 9pt; color: var(--muted); line-height: 1.45; }
 .knowledge-graph-svg { display: block; flex: 1; min-height: 0; width: 100%; height: 225mm; }
@@ -252,5 +285,5 @@ h1 { color: var(--forest); font-size: 33pt; line-height: 1.1; font-weight: 750; 
 @media print {
   html, body { background: #fff; padding: 0; margin: 0; }
   .page { margin: 0; box-shadow:none; }
-  .program-content, .learning-content, .learning-list, .credential-strip, .outcome, .cohort-gallery { break-inside: avoid; page-break-inside: avoid; }
+  .program-stack, .program-block, .program-content, .learning-content, .learning-list, .credential-strip, .outcome, .cohort-gallery { break-inside: avoid; page-break-inside: avoid; }
 }
